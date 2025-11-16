@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "login": {
+      "type": "string"
+    },
+    "pass": {
+      "type": "string"
+    },
+    "games": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "login",
+    "pass",
+    "games"
+  ]
+}

@@ -1,0 +1,4244 @@
+<html lang="ru" class="demo "><head>
+  <meta charset="UTF-8">
+  <title>Отчёт по операциям -  Интернет банк - Банк Санкт-Петербург</title>
+  <meta name="description" content="Попробуйте наш интернет-банк! Открытие и закрытие счетов, заказ карт, подача заявки на кредит и оплата любых услуг онлайн">
+  <meta name="keywords" content="интернет банк,личный кабинет,интернет банк бспб,ibspb,бспб интернет">
+
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+  <meta name="format-detection" content="telephone=no">
+
+  
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="https://idemo.bspb.ru/public/gen/lib.css?bccf1cad34b">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://idemo.bspb.ru/public/gen/main.css?bccf1cad34b">
+  <link rel="stylesheet" type="text/css" href="/public/fonts/icomoon/style.css?bccf1cad34b" media="screen">
+  <link rel="stylesheet" type="text/css" href="/public/stylesheets/print.css?bccf1cad34b" media="print">
+
+  
+
+  
+  <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/public/gen/vendor.js?bccf1cad34b"></script>
+  <script src="/public/gen/main.js?bccf1cad34b"></script>
+
+
+  
+  <script>function i18n(n){var r=MESSAGES[n];return r||console.error("i18n() is used with key: "+n),r||n}</script>
+<script>
+  window.MESSAGES = {"Delete":"Удалить","validation.loan.application.additional.passport.number":"Сведения предыдущего паспорта совпадают со сведениями основного","validation.amountExceedsIntrabankDailyLimit":"Вы исчерпали установленный вами дневной лимит на переводы внутри Банка. Попробуйте совершить перевод завтра или обратитесь в офис Банка, чтобы снять это ограничение.","validation.loan.insuranceConfirmation":"Уважаемый клиент! Подтверждение оплаты страховки по договору %2$s может сформировать только владелец счета","validation.future":"Дата должна быть в будущем","validation.inFutureNotAllowed":"Дата не может быть в будущем","validation.email":"Неверный e-mail","validation.currencyInspection.documents.import.currencyCertificateRowHeader":"\u003cb\u003eВО %s, № %s, %s, сумма %s, валюта %s\u003c/b\u003e","validation.internationalPayment.conversionNotAllowedForFuture":"Перевод с конверсией не может быть создан с датой в будущем","validation.currencyInspection.documents.import.error.INVALID_CONTRACT_AMOUNT_DATA.contractAmount":"Поле «Сумма в валюте контракта» должно быть заполнено","validation.exchange.currenciesMustDiffer":"Валюты выбранных счетов должны отличаться","validation.cardOrder.digital.cardHolderIsRequired":"По указанным реквизитам держатель не найден. Пожалуйста, проверьте внесенные данные. Если данные верны, держателю необходимо обратиться в офис банка для прохождения идентификации.","validation.file.UNKNOWN_ERROR":"Ошибка загрузки файла.","validation.currencyInspection.goodsCertificate.import.error.INVALID_DOCUMENT_DATE":"Документ №%s: Дата документа не может превышать дату завершения исполнения обязательств по контракту: %s","validation.notionalCashPooling.noPool":"У вас нет подключенного пула","validation.currencyInspection.documents.import.error.rowField.expectedDate":"Ожидаемый срок","validation.card.commonError":"Ошибка валидации","validation.recurrentEndDateLimit":"Конечная дата регулярного перевода не должна превышать год.","validation.incorrectName":"Неверное имя владельца счёта","validation.min":"Величина должна быть не меньше %2$d","validation.amountExceedsInternationalDailyLimit":"Превышает дневной лимит %s на валютный перевод.","validation.besp.notAvailableWhenRestrictedRemitter":"Ускоренный перевод недоступен. Возможная причина: есть действующие ограничения по счёту. Для получения подробной информации Вы можете обратиться в обслуживающее подразделение банка.","validation.amountExceedsDailyLimitIncludingCurrencyConversions":"Недостаточно средств на счёте для проведения операции, так как есть конверсионные операции находящиеся в обработке","validation.partialRepayment.greaterThanLoanAmount":"Максимальная сумма досрочного погашения не может быть равна или больше остатка задолженности","validation.dateAfter":"Дата должна быть после %s","validation.taxMoneyboxAccountNotAllowed":"Платежи со счёта налоговой копилки запрещены","validation.loanApplication.amountHint":"от %s до %s ₽","validation.otherBankPayroll.maxSize":"Максимальная длина должна быть %s символ(а/ов)","validation.mobileLoanApplication.amount":"Введите положительную сумму","validation.loanFullRepaymentImpossible":"Полное досрочное погашение по данному кредиту на данный момент невозможно","validation.referenceNumber":"Неверный УИН","validation.VCKP.invalidCounterpartyAccount":"Неверный лицевой счёт","validation.taxPayment.remitterVatinOrZeroRequired":"ИНН плательщика должен совпадать с ИНН организации отправителя или принимать значение \"0\"","validation.onlyLatinAllowed":"Используйте только латинские буквы","validation.multiBankPayroll.beneficiaryEmployeeInvalidAccountStatus":"Cчёт не подходит для выплаты зарплаты","validation.taxPayment.invalidReferenceNumberLength":"Код должен состоять из 4, 20, 25 символов или принимать значение \"0\"","validation.VATIN.invalidLength":"ИНН данного получателя должен содержать 10 знаков","validation.passwordsDiffer":"Пароли не совпадают","validation.alreadyExists":"Уже существует","validation.gar.error.internal":"Внутренняя ошибка","validation.invalidCharacter":"Недопустимый символ %2$s","validation.currencyInspection.documents.import.error.rowField.operationDate":"Дата ВО","validation.nonGovernmentBeneficiary":"Получателем должен быть государственный орган","validation.multiBankPayroll.beneficiaryNameMismatch":"ФИО %s не совпадает с ФИО-владельца счета %s","validation.taxStatusNeeds9DigitRemitterKpp":"При выбранном статусе налогоплательщика КПП может быть только 9 знаков","validation.internationalPayment.senderToReceiverInformation.required":"Обязательное поле для переводов в валюте CNY","validation.multiBankPayroll.priorityInvalid":"Очередность платежа (Приоритет) указана некорректно. Допустимые значения: %s","validation.multiBankPayroll.fieldMaxLength":"Максимальная длина должна быть %s символов","validation.amountExceedsLimit":"%1$s превышает доступный лимит на %2$s","validation.mobileLoanApplication.period":"Введите период в месяцах","validation.multiBankPayroll.remitterAccountNumberInvalidType":"Неверный тип расчетного счета организации","validation.currencyInspection.documents.error.INVALID_FORMAT":"Неверный формат","Attachment":"Прикрепить файл","validation.invalid.kpp":"Неверный КПП","validation.internationalPayment.detailsWereCleared":"Поле \"Назначение\" было очищено, так как совпадало с указанной целью перевода.","validation.currencyInspection.documents.error.REQUIRED_FIELD":"Обязательное поле","validation.file.UNKNOWN_FILE_EXTENSION":"Неподдерживаемый формат файла.","validation.budgetControlCounterparty":"Для данной статьи бюджета не допускается платеж указанному в реквизитах контрагенту.","validation.taxPayment.remitterVatinZeroRequired":"При выбранном статусе налогоплательщика ИНН может быть только \"0\"","validation.currencyInspection.documents.error.REQUIRED_EXPECTED_AND_PREPAYMENT_DATE":"Обязательное поле","validation.loan.application.additional.passport.series":"Сведения предыдущего паспорта совпадают со сведениями основного","validation.mustAcceptTerms":"Условия должны быть приняты","validation.cashWithdrawal.invalidCashWithdrawalDate":"Ближайшая дата изъятия: %2$s","validation.multiBankPayroll.beneficiaryEmployeeNotFound":"Сотрудник с номером счета %s не найден. Требуется обращение в офис","validation.currencyInspection.goodsCertificate.import.error.contractAmountExceeded":"Документ №%s: Данным документом превышена сумма контракта. Если у вас есть соглашение об увеличении суммы контракта, предоставьте его в банк, перейдя \u003ca href\u003d\"/currencyinspection/edit-passport-application?passportNumber\u003d%s\" target\u003d\"_blank\"\u003eпо ссылке\u003c/a\u003e.","validation.currencyExchange.ticketExpired":"Курс обмена устарел. Повторите операцию заново.","validation.required":"Обязательное поле","validation.statementLastDate.beforeFirstDate":"Конец периода не может быть раньше начала периода","validation.VCKP.customerIdRequired":"Введите номер лицевого счёта, чтобы запросить список счётчиков","validation.amount":"Цифры, не более двух цифр после запятой","validation.currencyInspection.documents.import.error.rowField.refDate":"Дата расчетного документа","validation.multiBankPayroll.beneficiaryNumberUnique":"Номер должен быть уникальным в разрезе ведомости","validation.budgetControlOneTimeRule":"Сумма перевода превышает разовый лимит: %s","validation.amountTooLow":"сумма должна быть больше %2$s","validation.loan.invalidServiceAccount":"Неверный обслуживающий счёт. Счёт не может содержать кредитную линию.","validation.taxPayment.incorrectStatus":"Маска \"03212\" может использоваться только со статусом \"31\"","validation.currencyInspection.documents.import.error.certificateField.accountId":"Номер счёта в Банке","validation.multiBankPayroll.beneficiaryCurrencyMismatch":"Валюта счёта получателя не соответствует валюте зарплатного проекта","validation.invalid":"Неверное значение","validation.physicalCashPooling.reportProblem":"Ошибка формирования отчета. Попробуйте изменить период","validation.crossborderImportNotSupported":"Импорт платежей в рублях за границу в настоящий момент не поддерживается.","validation.VATIN":"Допустимо 5, 10 или 12 цифр","validation.loanApplication.durationHint":"от %s до %s месяцев","validation.ibanFormatRequired":"Должен быть в формате IBAN","validation.currencyInspection.documents.import.warningAlert":"Обратите внимание на следующие документы:","validation.invalidFormat":"Значение не соответствует формату","validation.taxPayment.incorrectStatus.only.24":"Статус физического лица может принимать значение только \"24\"","validation.internationalPayment.beneficiaryBIC.required":"Перевод внутри Банка «Санкт-Петербург» должен осуществляться через перевод «По реквизитам».","validation.physicalCashPooling.noPool":"У вас нет подключенного пула","validation.physicalCashPooling.balance.lessZero":"Баланс не может быть отрицательным","validation.physicalCashPooling.sum.lessZero":"Сумма не может быть отрицательной","validation.multiBankPayroll.fieldExactLength":"Длина должна быть %s символов","validation.differentCurrencies":"Невозможно выполнить перевод между счетами с разными валютами","validation.taxPayment.incorrectStatus.only.31":"Статус физического лица может принимать значение только \"31\"","validation.loan.partialRepaymentNotAllowed":"Уважаемый клиент! Заявление на частичное досрочное погашение по договору %2$s может сформировать только владелец счета","validation.otherBankPayroll.beneficiaryRowNumberInvalid":"Номер должен быть положительным целым числом","validation.VCKP.illegalPeriod":"Неверный период. Формат должен быть вида ММ-ГГГГ, где месяц должен быть в пределах 01, 02, 03, ..., 12","validation.statementDateRange.isNull":"Необходимо задать период","validation.localCurrencyRequired":"Одна из валют должна быть рубли!","validation.invalidIncomeTypeCode":"Неверное значение. Допустимые значения: %2$s","validation.partialRepayment.canNotBeInPast":"Вы можете указать дату начиная со следующего дня","validation.internationalPayment.remitterInRublesNotAllowed":"Перевод с конверсией с рублёвого счёта невозможен","validation.invalidSMSCode":"Введён неверный SMS-код.","validation.depositTopup.invalidRemitter":"Не допускается пополнение депозита с выбранного спецсчета.","validation.notEnoughFunds":"Недостаточно средств на счёте","validation.invalidFieldLength":"Неверная длина поля. Максимально возможная длина: %s","validation.cardNumbersShouldDiffer":"Номера карт должны отличаться","validation.currencyInspection.goodsCertificate.error.INVALID_EXPECTED_DATE":"Превышает дату завершения контракта","validation.internationalPayment.swift77BRegulatoryReporting.required":"Поле «Дополнительная информация для переводов в ОАЭ»: поле должно быть заполнено.","validation.bankLicenseIsRevoked":"Обращаем внимание, что у данного банка отозвана лицензия","validation.range":"Величина должна быть от %2$d до %3$d","validation.currencyInspection.documents.import.error.rowField.comment":"Примечание","validation.missingCurrencyOperationCode":"В назначении перевода должен содержаться вид операции.","confirmDialog.yes":"Да","validation.max":"Величина не должна превышать %2$d","validation.besp.beneficiaryBankIsOwnBank":"Проведение внутрибанковских платежей по системе перспективных платежных сервисов недоступно","validation.invalidEmail":"Неверный формат электронной почты","validation.taxPayment.invalidReferenceNumber.allZeros":"Не может принимать значение, состоящее из всех нулей","validation.forbiddenFileExtension.filesInvalid":"Разрешено прикреплять только файлы %s.\u003cbr/\u003eПриложите файлы снова.","validation.currencyInspection.documents.error.CONTRACT_AMOUNT_EXCEEDED":"Общая сумма платежей с учетом операций, указанных в данной СВО, превышает сумму по УНК (%s). Предоставьте документы, подтверждающие увеличение суммы контракта и заявление на внесение изменений в I раздел ВБК, перейдя \u003ca href\u003d\"/currencyinspection/edit-passport-application?passportNumber\u003d%s\" target\u003d\"_blank\"\u003eпо ссылке\u003c/a\u003e, если Вы ещё не направляли эти документы в банк.","validation.invalidFeeAccount":"В качестве счетов списания и комиссии должны быть выбраны счета одной организации","validation.otherBankPayroll.currencyMismatch":"Валюта счёта плательщика не соответствует валюте зарплатного проекта","validation.multiBankPayroll.beneficiaryAccountNumberIsNotForSalary":"Cчёт не подходит для выплаты зарплаты","validation.taxPayment.remitterVatinOrCodeRequired":"При отсутствии ИНН необходимо указать в поле «Код» уникальный идентификатор начисления (УИН)","validation.taxEnsOnlyZeroValue":"Для пополнения ЕНС поле может быть только 0","validation.currencyInspection.documents.import.error.INVALID_EXPECTED_AND_PREPAYMENT_DATE":"«Ожидаемый срок» и «Срок возврата аванса» не могут превышать дату завершения исполнения обязательств по контракту","validation.invalidBeneficiaryAccountCurrency":"Перевод возможен только на счёт в рублях","validation.besp.notAvailableForBudgetBeneficiary":"Не доступен для бюджетных получателей","validation.currencyInspection.documents.error.INVALID_PASSPORT":"УНК %s не найден(ы) в справочнике контрактов (кредитных договоров). Проверьте правильность указания номера УНК. Если контракт стоит на учете в другом банке, выберите в графе «УНК или контракт» номер и дату контракта, укажите в графе «Примечание» номер УНК другого банка, ожидаемый срок и срок возврата авансового платежа, а также сумму в валюте контракта, если валюта контракта отличается от валюты платежа.","validation.card.currencyAndTypeMismatch":"Данная карта не может быть заказана для счета в указанной валюте","validation.currencyInspection.documents.import.error.rowField.contractNumber":"Номер контракта","validation.currencyInspection.documents.error.INVALID_EXPECTED_AND_PREPAYMENT_DATE.expectedDate":"Ожидаемый срок превышает срок действия контракта","validation.VCKP.fineCannotBeNegative":"Пеня не может иметь отрицательное значение","validation.minInclusive":"Величина должна быть не меньше %2$d","validation.multiBankPayroll.beneficiaryIncomeTypeCodeInvalid":"Код вида дохода указан некорректно. Допустимые значения: %s","validation.editAttachments.statusChangedError.newStatus.PENDING":"В обработке","validation.taxPayment.remitterVatinOrTaxDocNumberRequired":"ИНН плательщика или Документ (108) должен быть заполнен","validation.currencyInspection.documents.import.error.rowField.amount":"Сумма","validation.taxStatusNeeds10DigitVatin":"При выбранном статусе налогоплательщика ИНН может быть только 10 знаков","validation.currencyInspection.documents.import.error.INVALID_PASSPORT":"УНК %s не найден в справочнике контрактов (кредитных договоров). Проверьте правильность указания номера УНК. Если контракт стоит на учете в другом банке, выберите в графе «УНК или контракт» номер и дату контракта, укажите в графе «Примечание» номер УНК другого банка, ожидаемый срок и срок возврата авансового платежа, а также сумму в валюте контракта, если валюта контракта отличается от валюты платежа","validation.currencyInspection.goodsCertificate.error.noAttachmentsOnFreeSupply":"Необходимо приложить файл для подтверждения безвозмездной поставки","validation.missingVAT":"Укажите способ начисления НДС","validation.corporate.certificate.form.accountHasPendingTransaction":"На счете указанном для списания комиссии есть ограничения. Вы можете изменить вид справки на \"Бумажная\" или выбрать другой счёт списания комиссии","validation.partialRepayment.oneApplicationInSingleDateAllowed":"Вы уже подали заявление на выбранную дату","validation.currencyInspection.documents.import.error.rowField.contractDate":"Дата контракта","validation.confirmNotFound":"Не подтверждён номер телефона","validation.budgetPayment.VATINMustBeZero":"При выбранном статусе налогоплательщика ИНН может быть только 0","validation.currencyInspection.documents.error.INVALID_CONTRACT_AMOUNT_DATA":"Валюта не совпадает с валютой контракта","validation.partialRepayment.earlyPartialRepaymentNotAllowedForThisLoan":"Частичное досрочное погашение не разрешается для этого кредита","validation.paymentEndDateLimit":"Конечная дата перевода не должна превышать год.","validation.attachment.required":"Не выбран файл. Вложение обязательно","validation.object":"Не все поля заполнены корректно!","validation.currencyInspection.goodsCertificateByScan.error.INVALID_FORMAT":"Неверный формат","validation.card.invalidHolderName":"Не совпадает с настоящим именем %2$s","validation.invalidPaymentPeriod":"Неверное значение","validation.past":"Дата должна быть не позднее %2$s","validation.currencyInspection.goodsCertificate.error.INVALID_DOCUMENT_DATE":"Превышает дату завершения контракта","validation.currencyInspection.documents.import.error.certificateField.documentDate":"Дата формирования файла импорта","validation.invalidBIC":"Неверный код банка (БИК)","validation.wrongCurrentPassword":"Неверный текущий пароль","validation.notEnoughFundsWithDetails":"Недостаточно средств для перевода. С учётом комиссии сумма на счёте должна быть не менее %2$s.\u003cbr\u003eКомиссия за перевод составляет %3$s","validation.usernameExists":"Логин занят","validation.uniqueTemplateName":"Шаблон с таким названием уже существует. Пожалуйста, укажите другое название.","validation.payment.unknownCurrencyOperationCode":"Неизвестный код валютной операции","validation.passwordMatchingWithUsernameNotAllowed":"Пароль не должен содержать имя пользователя","validation.otherBankPayroll.accountNotSuitableForSalary":"Счёт не подходит для выплаты зарплаты","validation.currencyInspection.goodsCertificate.import.error.noAttachmentsOnFreeSupply":"Документ №%s: Необходимо приложить файл для подтверждения безвозмездной поставки. СПД сохранен в статусе «Черновик»","validation.invalidBccForPrivateTax":"Введенный КБК не относится к налоговым платежам. Оплату следует проводить через вкладку \u003ca href\u003d\"/payments/budget\"\u003eПлатежи в бюджет\u003c/a\u003e.","validation.physicalCashPooling.until.inFutureNotAllowed":"Конец периода не может быть больше текущей даты","validation.physicalCashPooling.from.inFutureNotAllowed":"Начало периода не может быть больше текущей даты","validation.taxPayment.incorrectMask":"\"31\" статус может использоваться только с маской \"03212\"","validation.invalidBeneficiaryAccountNumber":"По введённому номеру счёта, карты или телефона клиент не найден","validation.invalidAccountNumber":"Неверная комбинация номера счёта и БИК","validation.multiBankPayroll.beneficiarySoleProprietorSelfPayment":"Перевод ИП самому себе запрещен","validation.maxSize":"Максимальная длина должна быть %2$s символ(а/ов)","validation.currencyInspection.goodsCertificate.import.error.EXPECTED_DATE_EXCEED_POSSIBLE_PERIOD":"Документ №%s: Ожидаемый срок не может превышать %s: %s","validation.vckp.metersPrefillError":"Из-за технической ошибки не удалось заполнить счётчики","validation.currencyInspection.documents.error.NUMBER_OUT_OF_RANGE":"Число отрицательное или превышает максимальное значение","validation.notification.threshold":"Величина должна быть не меньше","validation.phone":"Номер должен начинаться с кода страны (для России - 7) и содержать минимум 10 цифр","validation.corporate.certificate.form.notEnoughFunds":"На счете указанном для списания комиссии недостаточно средств. Вы можете изменить вид справки на \"Бумажная\" или выбрать другой счет списания комиссии.","validation.multiBankPayroll.remitterAccountNumberSame":"Необходимо, чтобы во всех записях ведомости был указан одинаковый счёт плательщика","validation.greaterOrEqual.zero":"Введите значение большее или равное 0","validation.notionalCashPooling.reportProblem":"Ошибка формирования отчета. Попробуйте изменить период","validation.multiBankPayroll.prioritySame":"Необходимо, чтобы во всех записях ведомости была указана одинаковая очередность платежа (Приоритет)","validation.taxPayment.invalidReferenceNumberLength.debitRepayment":"Код должен состоять из 20 или 25 символов","validation.notionalCashPooling.range":"Отчет за указанный период не может быть создан","validation.yearList":"Один год или список годов через запятую от %2$d до %3$d","validation.wrongRemitterForUWPayment":"Пожалуйста, выберите другой счёт списания","validation.correspondentBankDoesNotAllowedForCurrencyAndCountry":"В настоящий момент переводы в валюте %s и банки получателей страны %s возможны только без указания банка-корреспондента.","validation.multiBankPayroll.remitterAccountNumberIsNotForSalary":"Счёт не принадлежит клиенту или не подходит для выплаты зарплаты","validation.corporate.signedstatements.form.notEnoughFunds":"На счете указанном для списания комиссии недостаточно средств. Вы можете выбрать другой счет списания комиссии.","validation.paymentDetailsTooLong":"Назначение перевода после добавления служебной информации не может превышать %2$s символов, вам нужно убрать: %3$s","validation.dailyLimitExceeded":"Превышен дневной лимит подписания платежей в %s. Способ подтверждения: %s.","validation.otherBankPayroll.purposeOperationCodeMissing":"Некорректно указан код валютной операции в назначении платежа","validation.partialRepayment.canNotBeGreaterThanLoanEndDate":"Дата не может превышать дату окончания кредита","validation.invalidDate":"Неправильная дата","validation.accountDoesNotExist":"Неверный номер счёта","validation.currencyInspection.goodsCertificateByScan.error.NOT_FOUND":"Не найдено","validation.notPrivateAccountNumber":"Укажите счёт физического лица","validation.currencyInspection.goodsCertificate.error.EXPECTED_DATE_EXCEED_POSSIBLE_PERIOD":"Не может превышать дату: %s","validation.statementFirstDate.tooSmall":"Минимально разрешенное значение даты начала выписки %s","validation.correspondentBankDoesNotAllowedForCurrency":"В настоящий момент переводы в валюте %s возможны только без указания банка-корреспондента.","validation.partialRepayment.earlyPartialRepaymentNotAllowedForThisCustomer":"Уважаемый клиент! Заявление на частичное досрочное погашение по договору %2$s может сформировать только владелец счета","validation.invalidRussianPhone":"Российский номер должен начинаться на 7 и содержать 11 цифр","validation.currencyInspection.documents.import.error.rowField.passportNumber":"УНК","validation.newCustomerNotSyncedBetweenBackends":"Операция на данный момент невозможна. Повторите попытку позже.","validation.cantPayToLoanAccount":"Нельзя совершить перевод на ссудный счёт","validation.loanRepaymentNotAllowedFrom":"Перевод на счёт досрочного погашения с этого счёта невозможен. Используйте связанный карточный счёт","validation.cardOrder.cardHolderBirthdayBeforeMinYear":"Дата должна быть не ранее %2$s года","validation.otherBankPayroll.sameBankBic":"Это БИК Банка \"Санкт-Петербург\". Если счёт получателя открыт в Банке \"Санкт-Петербург\", то заключите договор Зарплатного проекта или воспользуйтесь функционалом в рамках действующего договора \u003ca href\u003d\"/payrolls\"\u003eЗарплатного проекта\u003c/a\u003e.","validation.unknownRemitter":"Неизвестный номер счёта плательщика.","validation.usernameFormat":"Неверный формат логина","validation.currencyInspection.documents.import.error.rowField.operationCode":"Код ВО","confirmDialog.no":"Нет","validation.loan.accountChange":"Уважаемый клиент! Заявление на изменение счёта для гашения по договору %2$s может сформировать только владелец счета","validation.amountExceedsInterbankMe2MeOperationLimit":"Превышает лимит %s на операцию","validation.taxPayment.beneficiaryAccount":"Номер счёта получателя не соответствует налоговому платежу","validation.changeLoanLimit.loan.serviceAccount":"К кредитному договору не подключен сервис-аккаунт","validation.forbiddenFileExtension":"Разрешено прикреплять только файлы %s","validation.uinFormat":"Длина должна быть 20 или 25 символов","validation.besp.beneficiaryBankNotInBespCatalog":"Банк получателя не является участником системы перспективных платежных сервисов","validation.statementLastDate.tooDistantFuture":"Конец периода не может быть в далёком будущем","validation.taxStatusForbidsRemitterKpp":"При выбранном статусе налогоплательщика КПП может быть только \"0\"","validation.taxStatusNeeds10Or12DigitVatin":"ИНН должен состоять из 10 или 12 символов","validation.match":"Неверное значение","validation.urgentNotAllowedForAccount":"К сожалению, отправка срочного перевода для выбранного счёта не предусмотрена.","validation.changeLoanLimit.changeAction":"Проверьте корректность введённого значения вида изменения кредитного лимита","validation.currencyInspection.goodsCertificate.error.noAttachmentsWhenPayAgentSource":"Приложите подписанный акт-отчет по агентскому договору","validation.invalidDatePeriod":"Неправильный период","validation.invalidCvvFormat":"Код CVV должен состоять из 3 цифр.","validation.physicalCashPooling.noTime":"Время транзакции обязательно для заполнения","validation.taxPayment.foreignVatinRequired":"ИНН плательщика не должен совпадать с ИНН организации отправителя при выбранном статусе лица","validation.onlyCyrillicAllowed":"Используйте только русские буквы","validation.currencyInspection.goodsCertificate.error.contractAmountExceeded":"Данным документом превышена сумма контракта. Если у вас есть соглашение об увеличении суммы контракта, предоставьте его в банк, перейдя \u003ca href\u003d\"/currencyinspection/edit-passport-application?passportNumber\u003d%s\" target\u003d\"_blank\"\u003eпо ссылке\u003c/a\u003e.","validation.statement.sub.criterion.count":"Количество критериев по каждому полю поиска ограничено","validation.currencyInspection.documents.import.error.INVALID_CONTRACT_AMOUNT_DATA.contractCurrency":"Указанная валюта (валюты) не совпадает со значением текущей валюты контракта (кредитного договора)","validation.currencyInspection.documents.import.error.INVALID_ACCOUNT":"Платежи со счёта налоговой копилки запрещены","validation.taxPayment.invalidShortReferenceNumber":"Код должен состоять из 4 цифр и не всех нулей","validation.currencyInspection.documents.import.error.rowField.contractCurrency":"Валюта контракта","validation.remitterAccountClosed":"Счёт плательщика закрыт.","validation.changeCredential.authAttempts":"Неверный текущий пароль ({0,choice,1#осталась 1 попытка|1\u003cосталось {0} попытки|4\u003cосталось {0} попыток})","validation.multiBankPayroll.beneficiaryAccountNumberOtherbankUnavailable":"Согласно условиям договора ЗП внешние зачисления недоступны. Пожалуйста, обратитесь в банк","validation.physicalCashPooling.timeRange":"Неправильно задан диапазон времени","validation.currencyInspection.goodsCertificateByScan.error.DOCUMENT_DATE_IN_FUTURE":"Дата справки указана неверно","validation.currencyInspection.documents.error.REDUNDANT_CONTRACT_DATA":"При переводе собственных средств или возврате ошибочно поступивших средств не нужно заполнять поле «Уникальный номер контракта» или поля «Номер контракта» и «Дата контракта».","validation.cardOrder.cardHolderBirthdayInFuture":"Дата не может быть в будущем","validation.invalidBeneficiaryAccountOrCard":"По введённому номеру счёта или карты клиент не найден","validation.currencyInspection.documents.import.error.INVALID_FORMAT":"Не все реквизиты документа заполнены корректно","validation.budgetPayment.beneficiaryAccount":"Номер счёта получателя не соответствует платежу в бюджет","validation.currencyInspection.documents.import.error.certificateField.rows":"ВО","validation.internationalPayment.npsTerms.required":"Подтвердите своё согласие","validation.multiBankPayroll.beneficiaryPurposeOperationCode":"Должен быть указан код валютной операции","validation.taxPayment.invalidReferenceNumberCheckSum":"Не совпадает контрольный разряд УИН","validation.notEnoughFundsForCorporateDeposit":"На счете списания недостаточно средств для пополнения депозитного счета","validation.taxPayment.taxStatusOneOrRemitterVatinZeroRequired":"При наличии ИНН измените “Статус лица” на 01 или укажите 0","validation.currencyInspection.documents.import.error.REQUIRED_FIELD":"Обязательное поле","validation.changeCredential.attemptsExceed":"Превысили допустимое количество попыток смены логина. Попробуйте повторить действие позже.","validation.mulitBankPayroll.beneficiaryEmployeeKidsDepositType":"Указанный %s счёт детской карты не подходит для выплаты зарплаты","validation.excessVAT":"В назначении платежа задублирована информация об НДС","validation.currencyInspection.documents.error.INVALID_EXPECTED_AND_PREPAYMENT_DATE.prepaymentReturnDate":"Срок возврата аванса превышает срок действия контракта","validation.otherBankPayroll.accountNotSuitableForPayingSalary":"Счёт не принадлежит клиенту или не подходит для выплаты зарплаты","validation.recurrentDayOfMonth":"Число месяца должно быть от 1 до %2$s","validation.taxStatusNeeds12DigitVatin":"При выбранном статусе налогоплательщика ИНН может быть только 12 знаков","validation.internationalPayment.codeInNps.invalid":"Неверный код CNAPS","validation.statement.criterion.count":"Количество полей для поиска ограничено","validation.cardOrder.noBranchFound":"Офис выдачи не найден","validation.nonUrgentNotAllowed":"Несрочный платёж недопустим","validation.multiBankPayroll.beneficiaryNumberFormat":"Номер должен состоять из целых чисел, максимальная длина - %s символов","validation.invalidNonIbanAccountNumber":"Неверный номер счёта","validation.urgentNotAllowedAfterTime":"К сожалению, вы не можете отправить срочный перевод после %2$s.","validation.details.maxSize.warning":"Количество символов в назначении платежа превышает допустимые %1$s символов. Исправьте назначение платежа вручную","validation.currencyInspection.documents.import.error.REQUIRED_EXPECTED_AND_PREPAYMENT_DATE":"«Ожидаемый срок» и «Срок возврата аванса» должны быть указаны и не могут превышать дату завершения исполнения обязательств по контракту","validation.internationalPayment.timeCanNotBeInPast":"Перевод не может быть создан с датой в прошлом","validation.otherBankPayroll.amountSumIsNotPositive":"Сумма зачисления должна быть больше нуля","validation.statement.from.amount.greater":"Конечная сумма периода должна быть больше, чем начальная","validation.notEnoughOwnFunds":"Недостаточно собственных средств на счёте, будут использованы кредитные средства. Кредитная ставка может превышать ставку вклада","validation.loan.application.additional.passport.issued.date":"Дата выдачи предыдущего паспорта больше даты выдачи основного","validation.VCKP.fineCannotBeGreaterThanAmount":"Сумма пени не может превышать сумму платежа","validation.otherBankPayroll.dateLimitInFuture":"Дата не должна превышать год","validation.otherBankPayroll.remitterAccountNotAllowed":"Счет плательщика не подходит для выплаты зарплаты","validation.gar.error.invalidAddress":"Адрес не существует в ГАР","validation.addressNotFound":"Адрес не найден","validation.changeLoanLimit.incomeInBspb":"Проверьте корректность введённого значения получения зарплаты в банке Санкт-Петербург","validation.cardOrder.cardHolderBirthdayRequired":"Обязательное поле","validation.inFutureAllowed":"Дата должна быть в будущем","validation.cardOrder.noOtherCustomerFound":"По данным реквизитам не удалось однозначно определить клиента. Обратитесь в офис, пожалуйста.","validation.cardOrder.organizationNameAllowedSymbols":"Используйте только разрешённые символы — буквы латинского алфавита, цифры и знаки %2$s","validation.file.INVALID_FILE_CONTENT_BY_EXTENSION":"Не верный формат файла.","validation.multiBankPayroll.beneficiaryAccountNumberBicMismatch":"Неверная комбинация номера счёта и БИК","validation.currencyInspection.documents.import.error.rowField.contractAmount":"Сумма контракта","validation.greater":"Величина должна быть больше %2$d","validation.vendorPayment.notAllowed":"Оплата этой услуги картой другого банка запрещена.","validation.cardNumbersMustDiffer":"Номера карт должны различаться","validation.cashWithdrawal.minimumAmount":"Сумма снятия должна быть больше 0","validation.required.kpp":"Обязательное поле КПП","confirmDialog.areYouSure?":"Вы уверены?","validation.invalidUIP":"Неверное значение УИП","validation.budgetControlLimit":"Сумма перевода превышает лимит: %s","validation.editAttachments.statusChangedError.newStatus.ACCEPTED":"Принят","validation.notionalCashPooling.noTransactions":"Информация по начисленным процентам за указанный период отсутствует, попробуйте запросить на следующий рабочий день, но не ранее 3-его рабочего дня следующего за указанным периодом","validation.genericDocumentError":"Некорректный документ","validation.multiBankPayroll.beneficiaryVatinInvalid":"Неверное значение","validation.invalidBcc":"Неверный формат КБК. Код должен состоять из 20 символов буквенно-цифрового ряда, состоящего из букв русского и латинского алфавита.","validation.besp.notAvailableForRemitter":"Проведение ускоренных платежей со специальных счетов или счёта таможенной карты недоступно","validation.gar.error.notUniqueAddress":"Введённое значение не уникально. Пожалуйста, уточните адрес.","validation.multiBankPayroll.beneficiaryAmountPositive":"Сумма должна быть больше нуля","validation.budgetControlLimitBatch":"Общая сумма платежей со счетом списания %s и статьей бюджета %s превышает лимит: %s","validation.payroll.invalidBeneficiaryTaxStatus":"Невозможно добавить сотрудников резидентов и нерезидентов в одной ведомости.","validation.amountWithDecimals":"Сумма не должна содержать копеек.","validation.notInPast":"Дата не может быть в прошлом","validation.urgentPayment.timeCanNotBeInFuture":"Перевод с датой в будущем не может быть срочным","validation.besp.onlyRub":"Только для рублёвых счетов","validation.currencyInspection.documents.import.error.REDUNDANT_CONTRACT_DATA":"При переводе собственных средств или возврате ошибочно поступивших средств не нужно заполнять поле «Уникальный номер контракта»","validation.currencyInspection.documents.import.error.certificateField.direction":"Направление платежа","validation.paymentNotAllowedTo":"Перевод на этот счёт невозможен","validation.VCKP.meterDuplicateFound":"Указаны два прибора учета с одинаковым номером","validation.cardCustomDesignCode":"Неверный формат кода дизайна (XXXXXXXX-XXXX)","validation.fileTooLarge":"Приложенные файлы должны быть не больше 2 Мб","validation.taxPayment.incorrectTaxDocNumber":"Документ (108) заполнен неверно","validation.vckp.counterNameAndMeteringError":"Названия счётчиков и их показания должны быть заполнены полностью","validation.taxPayment.invalidReferenceNumberLength.shortStatusesList":"Код должен состоять из 20, 25 символов или принимать значение \"0\"","validation.minSize":"Минимальная длина должна быть %2$s символ(а/ов)","validation.invalidBigDecimalLength":"Неверная длина поля. Допускаются числа максимальной длины %s, c точностью до %s знаков после запятой","validation.invalid.reissue.activate.sms.notifications":"Невозможно добавить нотификации для перевыпускаемой карты.","validation.currencyInspection.documents.import.currencyCertificateHeader":"\u003cb\u003eСВО %s, № %s, %s\u003c/b\u003e","validation.payment.disabledInDemo":"В демо-версии переводы не разрешены","validation.otherBankPayroll.invalidAccountType":"Неверный тип расчетного счета организации","validation.currencyInspection.documents.import.successAlert":"Найдено документов в файле: %s. Успешно сохранённых документов: %s.","validation.documentFormat":"Длина должна быть 10 символов. Может содержать кириллицу","validation.upload.forbiddenFileExtension":"Загружен неподдерживаемый формат. Файл %s","validation.oneC.personalPaymentBetweenDifferentCurrencies":"Невозможно выполнить перевод между счетами с разными валютами","validation.paymentInForeignCurrencyOnlyInOwnBank":"Валютное поручение может быть отправлено только на счёт, открытый в ПАО «Банк «Санкт-Петербург» или его филиале","validation.amountExceedsDailyLimit":"Превышает дневной лимит %s.","validation.economyPayment.timeCanNotBeInFuture":"Перевод с датой в будущем не может быть экономичным","validation.invalidOtherBankBIC":"БИК другого банка должен отличатся от БИК Банка «Санкт-Петербург».","validation.currencyInspection.documents.import.error.UNKNOWN_CURRENCY":"Значение не соответствует справочнику валют","validation.file.MAX_CONTENT_SIZE":"Превышен максимальный допустимый размер.","validation.3dsecurePasswordFormat":"Пароль должен быть длиной 4-16 символов, содержать буквы и/или цифры, но не другие символы","validation.changeLoanLimit.documentType":"Выбранный тип документа не доступен для данного пользователя","validation.internationalPayment.requiredField":"поле должно быть заполнено.","validation.duplicatePhone":"Этот номер уже добавлен","validation.otherBankPayroll.remitterAccountNotFound":"Cчёт плательщика не найден","validation.multiBankPayroll.beneficiaryCollectedAmountInvalid":"Неверное значение","validation.currencyInspection.documents.error.INVALID_CONTRACT_DATA":"Обязательное поле","validation.changeLoanLimit.loanLimitNewValue":"Проверьте корректность введённого значения","validation.taxPayment.invalidTreasureReferenceNumberLength":"Код должен состоять из 4, 20, 25 символов","validation.loan.fullRepaymentNotAllowed":"Уважаемый клиент! Заявление на полное досрочное погашение по договору %2$s может сформировать только владелец счета","validation.editAttachments.statusChangedError.newStatus.REJECTED":"Отказан","validation.invalidSWIFT":"Неверный SWIFT-код банка","validation.paymentCorrection.atLeastOneOf":"Должно быть заполнено хотя бы одно из полей – Получатель, Счёт получателя или Назначение","validation.currencyInspection.documents.error.UNKNOWN_CURRENCY":"Значение не соответствует справочнику валют.","validation.loan.repaymentsChange":"Уважаемый клиент! Заявление на изменение даты погашения по договору %2$s может сформировать только владелец счета","validation.forbiddenFileExtension.filesRemoved":"Разрешено прикреплять только файлы %s.\u003cbr/\u003eСледующие файлы были удалены: %s","validation.sameUsername":"Логин совпадает с текущим","validation.beneficiaryAccountClosed":"Счёт получателя закрыт.","validation.samePasswordNotAllowed":"Новый пароль должен отличаться от старого","validation.urgentNotAllowedForCurrency":"К сожалению, отправка срочного перевода в %2$s не предусмотрена.","validation.otherBankPayroll.invalidIncomeTypeCode":"Неверное значение. Допустимые значения: %s","validation.warning.dailySmsLimitExceeded":"Обращаем ваше внимание, что дневной лимит подписания платежей по SMS - %s.\u003cbr/\u003eПри необходимости совершить платеж(и) на большую сумму используйте токен","validation.dailyExchangeLimitExceeded":"Превышен дневной лимит подписания конверсионных операций в %s. Способ подтверждения: %s.","validation.taxEnsStatusOnly01":"Для пополнения ЕНС укажите статус лица 01","validation.taxPayment.defaultIsNotAllowed":"Не может принимать значение 0","validation.editAttachments.statusChangedError":"Валютный контролёр поменял статус документа на «%s». Изменение состава вложений невозможно.","validation.crossborder.invalidBankAccount":"Указано некорректное значение.","validation.invalidDateFormat":"Значение не соответствует формату ДД.ММ.ГГГГ","validation.accountDoesNotBelongToCustomer":"Счёт не соответствует организации","validation.currencyInspection.documents.import.error.rowField.prepaymentReturnDate":"Срок возврата аванса","validation.currencyInspection.goodsCertificate.import.error.INVALID_EXPECTED_DATE":"Документ №%s: Ожидаемый срок не может превышать дату завершения исполнения обязательств по контракту: %s","validation.currencyInspection.goodsCertificate.import.error.invalidFreeSupplyOption":"Документ №%s: Некорректно указан признак безвозмездной поставки","validation.multiBankPayroll.dateTooFarInFuture":"Превышена максимально возможная дата платежа ЗП ведомости","validation.loanApplication.personal.loanData.promoLoanHint":"От %minAmount рублей ставка ниже на %rateDifference%","validation.loan.isNotWorkingDay":"Дата погашения выпадет на выходной или праздничный день.","validation.payment.disabledPeriod":"Ближайшая возможная дата платежа %1$s. Перевод будет отправлен на обработку в Банк %2$s. Исправьте дату и повторите попытку","validation.invalidPhone":"Номер должен начинаться с кода страны (для России - 7) и содержать минимум 10 цифр","validation.multiBankPayroll.beneficiaryNumberInvalid":"Номер должен быть положительным целым числом","validation.amountExceedsLoanAmount":"%1$s превышает выделенную сумму кредита в %2$s","validation.patternNotSatisfied":"Значение не соответствует формату \u0027%2$s\u0027","validation.paymentNotAllowedFrom":"Перевод с этого счёта невозможен","validation.multiBankPayroll.dateInPast":"Дата не может быть ранее текущей","validation.domestic.vatNoteInDescriptionIsMissing":"Отсутствует информация по НДС","validation.currencyInspection.documents.import.error.INVALID_CONTRACT_DATA":"Поле «Уникальный номер контракта» должно быть заполнено","validation.amountTooHigh":"сумма должна быть меньше %2$s","validation.changeLoanLimit.agreeWithConditions":"Проверьте корректность введённого значения согласия с условиями","validation.bccEqualsReferenceNumber":"КБК и код должны различаться","validation.sameAccount":"Счета плательщика и получателя не могут совпадать","validation.currencyInspection.goodsCertificateByScan.error.SERVICE_NOT_CONNECTED":"По выбранному УНК требуется подключить необходимую услугу ВЭД.Консультант","validation.upload.duplicateFilename":"Файл с таким именем уже добавлен. Переименуйте или выберите другой. Файл %s","validation.passwordFormat":"Неверный формат пароля!","validation.currencyInspection.documents.import.error.rowField.currency":"Валюта платежа","validation.currencyInspection.documents.import.error.NUMBER_OUT_OF_RANGE":"Число отрицательное или превышает максимальное значение","validation.currencyInspection.documents.import.error.rowField.ref":"Номер расчетного документа","validation.loan.invalidPartialRepaymentDate":"Дата частичного досрочного погашения не должна предшествовать дате первого платежа по кредиту (%1$s).","validation.nonBudgetBeneficiary":"Получателем должен быть государственный орган, организация в государственной собственности, либо негосударственная некоммерческая организация","validation.accountTargetDoesNotMatch":"Целевое назначение счёта не соответствует требуемому","validation.currencyInspection.documents.import.errorAlert":"\u003cb\u003eНайдены документы с ошибками: %s.\u003c/b\u003e\u003cbr\u003e Исправьте ошибки и загрузите документы заново.","validation.card.notOwnBankCardNumber":"Карта выдана другим банком — перевод невозможен.","validation.gar.error.incompleteAddress":"Адрес не полон"}
+</script>
+  <script src="/public/lib/vue.global.prod.js?bccf1cad34b"></script>
+  
+  
+</head>
+
+<body class="logged-in demo corporate redesign">
+
+
+
+
+  
+  
+    <script>function GoogleAnalyticsSetup(options) {
+  var self = this;
+
+  self.init = function() {
+    if (options.userId) {
+      ga('set', 'userId', options.userId);
+    }
+
+    ga('set', 'dimension3', getGaCId());
+    ga('set', 'dimension7', options.dimension7);
+  }
+
+  function getGaCId() {
+    var match = getCookie('_ga');
+    if (match) {
+      var gaCIdMatch = getCid(decodeURIComponent(match));
+      return gaCIdMatch ? gaCIdMatch : '';
+    }
+    return '';
+  }
+
+  function getCid(gaCIdMatch) {
+    var parts = gaCIdMatch.split('.');
+    if (parts.length == 4 && parts[0].includes("GA") && Number(parts[0].replace("GA", '')) && Number(parts[1])
+      && parts[2].length < 16 && parts[3].length < 16) {
+      return gaCIdMatch.substring(6)
+    } else {
+      return null;
+    }
+  }
+
+  function getCookie(name) {
+    const parts = ('; ' + document.cookie).split('; ' + name + '=');
+    return (parts.length === 2)
+      ? parts.pop().split(';').shift()
+      : null;
+  }
+}</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      $(this).on('pageshow', function(e) {
+
+        ga('create', 'UA-31858768-3', 'auto');
+
+        new GoogleAnalyticsSetup({
+          userId: '10398',
+          dimension7: 'Десктоп'
+        }).init();
+
+        
+          ga('set', 'EIO', 'SEB');
+          ga('set', 'signatureType', 'SINGLE');
+          ga('set', 'segment', '');
+        
+      });
+    </script>
+  
+  
+
+
+
+
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7SK140WH23"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      gtag = function() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7SK140WH23', {
+        send_page_view: false,
+        dimension7: 'Десктоп'
+      });
+    </script>
+  
+  
+
+
+
+
+
+
+
+
+  <script>function YandexMetrikaSetup(options) {
+  var self = this;
+  var YMClientID;
+
+  self.init = function() {
+    getClientId();
+  }
+
+  self.ymSendOld = function(ymFunction, webAnalyticsObject) {
+    var eventType = Object.keys(webAnalyticsObject)[0];
+    webAnalyticsObject[eventType].dimension7 = options.dimension7;
+    webAnalyticsObject[eventType].dimension3 = YMClientID;
+
+    ym(options.yandexMetrikaId, ymFunction, webAnalyticsObject);
+  }
+
+  self.ymSend = function(ymFunction, paramsObject) {
+    ym(options.yandexMetrikaId, ymFunction, paramsObject);
+  }
+
+  function getClientId() {
+    ym(options.yandexMetrikaId, 'getClientID', function(clientID) {
+      YMClientID = clientID;
+    });
+  }
+}</script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() {(m[i].a = m[i].a || []).push(arguments)};
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    var yandexMetrikaId = 87881292;
+    ym(yandexMetrikaId, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+
+    var yandexMetrikaSetup = new YandexMetrikaSetup({
+      dimension7: 'Десктоп',
+      yandexMetrikaId: yandexMetrikaId
+    });
+    yandexMetrikaSetup.init();
+
+    ymSend = yandexMetrikaSetup.ymSendOld;
+    function ymSendNew() {}
+    if ($("[name=\"yandexMetrikaPageview\"]")) {
+      function ymSend() {}
+      ymSendNew = yandexMetrikaSetup.ymSend;
+    }
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/87881292" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
+
+
+
+<script>function WebAnalytics(options) {
+  var self = this;
+  var sessionId = null;
+
+  self.init = function() {
+    sessionId = new Date().getTime() + '.' + this.getDimension2RandomPartition();
+  }
+
+  self.sendPageview = function(pageviewArgs) {
+    send('pageview', pageviewArgs);
+  }
+
+  self.sendEvent = function(eventArgs) {
+    send('event', eventArgs);
+  }
+
+  function send(action, args) {
+    if (!$.isEmptyObject(args)) {
+      setDimension(args, "dimension1", options.userId);
+      args.dimension2 = sessionId;
+      args.dimension4 = new Date().toISOString();
+      setDimension(args, "dimension12", $('input[name="dimension12"]').val());
+
+      ga('send', action, args);
+      gtag('event', action, args);
+
+      let paramsObject = {};
+      paramsObject[action] = args;
+      ymSend('params', paramsObject);
+    }
+  }
+
+  self.getDimension2RandomPartition = function() {
+    var cryptoObj = window.crypto || window.msCrypto;
+    var randomForCd2 = new Uint32Array(2);
+    cryptoObj.getRandomValues(randomForCd2);
+    return randomForCd2[0].toString(36).slice(-4) + randomForCd2[1].toString(36).slice(-4);
+  }
+
+  function setDimension(args, dimension, value) {
+    if (value) args[dimension] = value;
+  }
+}</script>
+<script>function YandexMetrika(options) {
+  var self = this;
+
+  const eventNestedHierarchy = ['PageName', 'Location', 'Action', 'Platform', 'ApplicationType', 'Product', 'Step', 'Insurance'];
+  const pageviewNestedHierarchy = ['Page', 'Platform', 'ApplicationType', 'Product', 'Step', 'Insurance'];
+
+  self.init = function(page) {
+    $(page).on('pageshow', function() {
+      sendInitialPageview();
+      bindSendEvents(page);
+    });
+    return self;
+  }
+
+  self.sendPageview = function(pageviewArgs) {
+    sendYandexMetrika(pageviewArgs, 'pageview');
+  }
+
+  self.sendEvent = function(eventArgs) {
+    sendYandexMetrika(eventArgs, 'event');
+  }
+
+  function sendInitialPageview() {
+    var web = $(document).find('input[name="yandexMetrikaPageview"]').val();
+    var ya = $(document).find('input[name="webAnalyticsPageview"]').val();
+    sendYandexMetrika(web || ya, 'pageview');
+  }
+
+  function bindSendEvents(page) {
+      $(document).find('[data-yandex-metrika-event]').off('click', clickYandexMetrikaEvent).on('click', clickYandexMetrikaEvent);
+      $(document).find('select[data-yandex-metrika-event]').off('change', clickYandexMetrikaEvent).on('change', clickYandexMetrikaEvent);
+  }
+
+  function clickYandexMetrikaEvent(event) {
+    var el = $(event.currentTarget);
+    var args = el.data('yandex-metrika-event');
+    sendYandexMetrika(args, 'event');
+  }
+
+  function sendYandexMetrika(args, type) {
+    if (!$.isEmptyObject(args)) {
+      if (typeof args !== 'object') args = JSON.parse(args);
+      if (args["WithInsurance"]) args["Insurance"] = ($("[name=yandexMetrikaInsurance]").val() === "true")
+        ? $("[name=yandexMetrikaInsuranceTrue]").val() : $("[name=yandexMetrikaInsuranceFalse]").val();
+      args["Platform"] = options.Platform;
+      let paramsObject = convertToNestedObject(args, type);
+      window.ymSendNew('params', paramsObject);
+    }
+  }
+
+  function convertToNestedObject(args, type) {
+    let nestedHierarchy = (type === 'event') ? eventNestedHierarchy : pageviewNestedHierarchy;
+    let orderedValues = [];
+    let currentIndex = 0;
+    for (let i = nestedHierarchy.length - 1; i >= 0; i--) {
+      let expectedArgKey = nestedHierarchy[i];
+      if (!$.isEmptyObject(args[expectedArgKey])) {
+        orderedValues[currentIndex] = args[expectedArgKey];
+        currentIndex++;
+      }
+    }
+
+    let rightLeg, leftLeg = orderedValues[0];
+    for (let i = 1; i < orderedValues.length; i++) {
+      rightLeg = {};
+      rightLeg[orderedValues[i]] = leftLeg;
+      leftLeg = rightLeg;
+    }
+
+    let resultObject = {};
+    resultObject[(type === 'event') ? 'Event' : 'Pageview'] = leftLeg;
+    return resultObject;
+  }
+}</script>
+<script>
+  window.WebAnalytics = new WebAnalytics({
+    userId: '10398'
+  });
+  window.WebAnalytics.init();
+
+  $(this).on('pageshow', function(e) {
+    var webAnalyticsPageview = $('input[name="webAnalyticsPageview"]').val();
+    if (webAnalyticsPageview) window.WebAnalytics.sendPageview(JSON.parse(webAnalyticsPageview));
+
+    var alertWebAnalyticsPageView = $('input[name="alertWebAnalyticsPageView"]').val();
+    if (alertWebAnalyticsPageView) window.WebAnalytics.sendPageview(JSON.parse(alertWebAnalyticsPageView));
+  });
+
+  
+  
+    window.yandexMetrika = new YandexMetrika({Platform: "Десктоп"});
+  
+  window.yandexMetrika.init(this);
+</script>
+
+
+
+
+
+
+
+<div class="ui-loader hidden">
+  <div class="ui-icon-loading"></div>
+  <div class="with-progress hidden">
+    <div class="description"></div>
+    <div class="progress progress-danger">
+      <div class="bar"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  $.fn.selectpicker.language = 'ru';
+  
+    
+    $.fn.selectpicker.defaults = $.extend($.fn.selectpicker.defaults, {
+      noneSelectedText: 'Ничего не выбрано',
+      noneResultsText: 'Не найдено совпадений',
+      countSelectedText: 'Выбрано {0} из {1}',
+      maxOptionsText: ['Достигнут предел ({n} {var} максимум)', 'Достигнут предел в группе ({n} {var} максимум)', ['items', 'item']]
+    });
+  
+  $(function() {
+    $('.selectpicker').selectpicker({showContent: false, liveSearch: true});
+  });
+</script>
+<script>
+  $.fn.datepicker.options = {startDate:'27.10.2025', format:'dd.mm.yyyy', weekStart: 1, language: 'ru', autoclose:true};
+  $(function() {
+    var dateLength = 'dd.mm.yyyy'.length;
+
+    $('.datepicker-input')
+      .on('changeDate', function() {
+        $(this).removeClass('placeholder');
+      })
+      .each(function(i, input) {
+        new SmartInputMask(input, SmartMask.DATE).init();
+
+        input = $(input);
+        if (!input.attr('maxlength')) {
+          input.attr('maxlength', dateLength);
+        }
+      });
+  });
+</script>
+
+<div id="outer-wrapper">
+  <div id="inner-wrapper">
+
+    <div id="header">
+      <div class="content clearfix">
+        <a id="logo" href="/start">
+  <img src="/public/images/logo-bspb-ru.png" alt="Интернет банк - Банк Санкт-Петербург" class="print-only">
+  <img src="/public/images/logo-bspb-ru.svg" alt="Интернет банк - Банк Санкт-Петербург" class="print-hidden">
+</a>
+<div class="environment print-hidden">
+  Интернет-банк
+  
+</div>
+        <div id="controls">
+          
+
+  <div id="user" class="nav-user">
+    
+
+    <span class="name-holder multiple-representees ">
+      
+        <div id="user-greeting">Королёва Ольга</div>
+      
+      
+
+      
+        <div id="representee-name" class="print-hidden">
+          <i class="icon representee-corporate"></i>
+          ОАО "Коудборн"
+        </div>
+      
+
+      <div id="representee-name" class="print-only">
+        Открытое Акционерное Общество "Коудборн"
+      </div>
+
+      
+  <script>
+    $(function() {
+      $('select[name="representee-list"]').change(function() {
+        $.post('/representee', {
+            customerRef: $('#representee-list option:selected').val(),
+            deviceData: window.biZoneProxy && window.biZoneProxy.getData() || '',
+            authenticityToken: 'be3baf0e854db0505c97257e4eafb490493d0dc2'
+          }
+        ).then(function(data) { window.location.href = data }
+        );
+      });
+      
+        $('.bootstrap-select-searchbox').hide();
+      
+
+      $('#representee-list button').attr('title', "Выберите клиента (физическое или юридическое лицо), которого хотите представлять");
+    });
+  </script>
+
+  <div id="representee-list">
+    
+
+<select name="representee-list" size="1" class="selectpicker hidden representee-name representee-corporate" style="display: none;">
+  
+      
+        <option value="1" class="representee representee-private">Королёва Ольга</option>
+      
+        <option value="CORP:6" class="representee representee-corporate" selected="">ОАО "Коудборн"</option>
+      
+        <option value="CORP:7" class="representee representee-corporate">ИП "Морозов Павел Изяславович"</option>
+      
+        <option value="CORP:13" class="representee representee-corporate">ОАО "Коудборн-1"</option>
+      
+    
+  
+  
+
+  
+</select><div class="btn-group bootstrap-select hidden representee-name representee-corporate"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Выберите клиента (физическое или юридическое лицо), которого хотите представлять"><span class="filter-option pull-left">ОАО "Коудборн"</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><div class="bootstrap-select-searchbox" style="display: none;"><input type="text" class="input-block-level form-control"></div><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0"><a tabindex="0" class="representee representee-private" style=""><span class="text">Королёва Ольга</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1" class="selected"><a tabindex="0" class="representee representee-corporate" style=""><span class="text">ОАО "Коудборн"</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="representee representee-corporate" style=""><span class="text">ИП "Морозов Павел Изяславович"</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="representee representee-corporate" style=""><span class="text">ОАО "Коудборн-1"</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+  </div>
+
+
+<script>
+  $(function() {
+    $.post('/initial-representee', {
+        deviceData: window.biZoneProxy && window.biZoneProxy.getData() || '',
+        authenticityToken: 'be3baf0e854db0505c97257e4eafb490493d0dc2'
+      }
+    );
+  });
+</script>
+
+      
+    </span>
+
+    <span id="preference-controls" class="clearfix">
+      
+        <a id="notifications-button" class="nav-item print-hidden" title="Уведомления" tooltip="Нет уведомлений">
+          <span id="notifications-count" class="hidden badge" title="Уведомления" style="display: inline;">28</span>
+          <span class="icon-bell"></span>
+        </a>
+
+        <script>
+          var userAlerts = new UserAlerts({
+            unreadAlerts : 28,
+            user: '10398',
+            textNoAlerts: 'Нет уведомлений'
+          });
+          $(userAlerts.init);
+        </script>
+      
+
+      <script>
+        $(function() {
+          if (window.countBadges === undefined)
+            window.countBadges = new CountBadges(300000);
+          window.countBadges.updateMessages('.nav-user');
+          window.countBadges.updateOffers('.nav-user');
+        });
+      </script>
+
+      <a id="messages-button" class="nav-item print-hidden messages" title="Переписка с банком" href="/corporate/messages">
+        <span class="icon-email"></span>
+      </a>
+
+      <a id="offers-button" class="nav-item offers" title="Все предложения" href="/offers"><span class="icon-special-offers2"></span></a>
+      <a id="contact-button" class="nav-item" title="Контакты банка"><span class="icon-phone"></span></a>
+      <a id="settings-button" class="nav-item" title="Настройки" href="/settings"><span class="icon-cog"></span></a>
+
+      <script>
+        $('#contact-button').on('click', function() {
+          showAjaxDialog('/application/contacts')
+        });
+      </script>
+      
+    </span>
+
+    
+
+    <a id="logout-button" class="nav-item" title="Выйти" href="/auth/logout?client_id=1&amp;redirect_uri=https://idemo.bspb.ru/logout?corporate=true">
+      <span class="icon-door"></span>
+    </a>
+  </div>
+
+  
+    <div id="alerts-modal-container" class="modal fade hidden" tabindex="-1"></div>
+  
+
+  <script>
+  var timeoutWatcher = new (function() {
+    var self = this;
+    var sessionExpiration = 1500000;
+    var timeoutLabels = [];  timeoutLabels[0] = 'Ваш сеанс будет завершён через 1 минуту'; timeoutLabels[1] = 'Ваш сеанс будет завершён через 1 минуту'; timeoutLabels[2] = 'Ваш сеанс будет завершён через 2 минуты'; timeoutLabels[3] = 'Ваш сеанс будет завершён через 3 минуты'; timeoutLabels[4] = 'Ваш сеанс будет завершён через 4 минуты'; timeoutLabels[5] = 'Ваш сеанс будет завершён через 5 минут';
+    var timeoutWatcherInterval = 60000;
+    var timeoutWatcherTime = sessionExpiration - 5 * timeoutWatcherInterval;
+    var timeout, interval;
+
+    self.continueSession = function() {
+      $.get('/ping');
+      $('#timeout-warning').modal('hide');
+      self.resetTimeout();
+    };
+
+    function showSessionTimeoutModal() {
+      var counter = Math.round((sessionExpiration - timeoutWatcherTime) / 60000);
+      $('.modal:visible').modal('hide');
+      $('#timeout-warning .modal-header h3').text(timeoutLabels[counter]);
+      $('#timeout-warning').modal({show: true});
+
+      interval = setInterval(function() {
+        $('#timeout-warning .modal-header h3').text(timeoutLabels[--counter]);
+        $('#timeout-warning').modal({show: true});
+        if (counter <= 0) {
+          clearInterval(interval);
+          location.href = '/logout?url=' + encodeURIComponent(location.pathname + location.search);
+        }
+      }, timeoutWatcherInterval);
+    }
+
+    self.testActivate = function(updateInterval) {
+      if (updateInterval) timeoutWatcherInterval = updateInterval;
+      showSessionTimeoutModal();
+    };
+
+    self.resetTimeout = function() {
+      clearInterval(interval);
+      clearTimeout(timeout);
+      timeout = setTimeout(showSessionTimeoutModal, timeoutWatcherTime, timeoutWatcherTime);
+    };
+
+    self.init = function() {
+      $(document).ajaxSuccess(self.resetTimeout);
+      self.resetTimeout();
+    }
+  })();
+
+  $(function() {
+    timeoutWatcher.init();
+    $('#timeout-continue-button').on("click", timeoutWatcher.continueSession);
+  });
+</script>
+
+<div id="timeout-warning" class="modal hide" tabindex="-1">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>&nbsp;</h3>
+  </div>
+  <div class="modal-body">
+    <p>Желаете ли вы продолжить работу в интернет-банке?</p>
+  </div>
+  <div class="modal-footer">
+    <a class="btn" href="/logout">Выйти</a>
+    <button class="btn btn-primary" id="timeout-continue-button">Продолжить</button>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="body" class="section-statements action-statements-statement branch-001">
+      
+        <script>function Menu(){"use strict";function n(){$("#feedback-popup").show()}function o(){$("li.restart-welcome-tour").on("click",function(){restartWelcomeTour()})}this.init=function(){$(".navbar").on("mouseenter",function(){$("select:focus").blur()}),$(".show-feedback-popup").on("click",n),o()}}</script>
+
+<div class="navbar navbar-main">
+  <div class="navbar-inner">
+    
+
+
+<ul class="navigation-menu nav">
+  
+    
+    <li id="overviewCorporate" class="section-bank">
+      
+      
+        <a id="bank-overview" href="/overview"><span class="underline">Главная</span></a>
+      
+    </li>
+  
+    
+    <li id="accounts" class="section-accounts active dropdown">
+      
+        
+        
+          <a id="accounts-index" class="dropdown-toggle" href="/accounts"><span class="underline">Счета</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="statement" class="section-statements active">
+      
+      
+        <a id="statements-statement" href="/statement">Выписка</a>
+      
+    </li>
+  
+    
+    <li id="corporateAccountIndex" class="section-corporate">
+      
+      
+        <a id="corporate-accounts-index" href="/corporate/accounts">Счета</a>
+      
+    </li>
+  
+    
+    <li id="cash" class="section-corporate">
+      
+      
+        <a id="corporate-cash-reservations-index" href="/cash-reservations">Касса</a>
+      
+    </li>
+  
+    
+    <li id="invoicing" class="section-null">
+      
+      
+        <a id="/corporate/invoicing" href="/corporate/invoicing">Выставление и получение счетов</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="payments" class="section-payments">
+      
+      
+        <a id="payments-form" href="/payments/form"><span class="underline">Платежи</span></a>
+      
+    </li>
+  
+    
+    <li id="payrolls" class="section-corporate dropdown">
+      
+        
+        
+          <a id="corporate-payrolls-index" class="dropdown-toggle" href="/payrolls"><span class="underline">Зарплата</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="salaryProjectApplications" class="section-corporate">
+      
+      
+        <a id="corporate-salaryprojectapplications-index" href="/corporate/salary-project">Зарплата</a>
+      
+    </li>
+  
+    
+    <li id="payrollsIndex" class="section-corporate">
+      
+      
+        <a id="corporate-payrolls-index" href="/payrolls">Ведомости</a>
+      
+    </li>
+  
+    
+    <li id="otherBankPayrolls" class="section-corporate">
+      
+      
+        <a id="corporate-payrolls-otherbankpayrolls-index" href="/payrolls/other-bank">Внешние зачисления</a>
+      
+    </li>
+  
+    
+    <li id="employees" class="section-corporate">
+      
+      
+        <a id="corporate-employees-index" href="/corporate/employees">Сотрудники</a>
+      
+    </li>
+  
+    
+    <li id="employeeApplications" class="section-corporate">
+      
+      
+        <a id="corporate-employees-applications" href="/corporate/employees/applications">Добавление сотрудников</a>
+      
+    </li>
+  
+    
+    <li id="registriesIndex" class="section-corporate">
+      
+      
+        <a id="corporate-registries-registries-transferdismissalregistries" href="/corporate/registries/transfer">Увольнение и перевод сотрудников</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="corporateCards" class="section-corporate dropdown">
+      
+        
+        
+          <a id="corporate-cards-cardsoverview-index" class="dropdown-toggle" href="/corporate/cards"><span class="underline">Карты</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="corporateCardsIndex" class="section-corporate">
+      
+      
+        <a id="corporate-cards-cardsoverview-index" href="/corporate/cards">Бизнес-карты</a>
+      
+    </li>
+  
+    
+    <li id="cashDepositCards" class="section-corporate">
+      
+      
+        <a id="corporate-cashdepositcards-index" href="/corporate/cash-deposit-cards">Самоинкассация</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="acquiring" class="section-corporate dropdown">
+      
+        
+        
+          <a id="corporate-acquiring-acquiring-index" class="dropdown-toggle" href="/corporate/acquiring"><span class="underline">Эквайринг</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="acquiringIndex" class="section-corporate">
+      
+      
+        <a id="corporate-acquiring-acquiring-index" href="/corporate/acquiring">Эквайринг</a>
+      
+    </li>
+  
+    
+    <li id="sbp" class="section-null">
+      
+      
+        <a id="/corporate/sbp" href="/corporate/sbp">СБП</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="depositsCorporate" class="section-deposits">
+      
+      
+        <a id="deposits-index" href="/deposits"><span class="underline">Депозиты</span></a>
+      
+    </li>
+  
+    
+    <li id="loansCorporate" class="section-corporate dropdown">
+      
+        
+        
+          <a id="corporate-loans-loans-index" class="dropdown-toggle" href="/corporate/loans"><span class="underline">Кредиты</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="loansCorporateLoans" class="section-corporate">
+      
+      
+        <a id="corporate-loans-loans-index" href="/corporate/loans">Кредиты</a>
+      
+    </li>
+  
+    
+    <li id="legallySignificantDocuments" class="section-null">
+      
+      
+        <a id="/corporate/legally-significant-documents" href="/corporate/legally-significant-documents">ЮЗЭДО</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="currencyOverview" class="section-currencyoverview dropdown">
+      
+        
+        
+          <a id="currencyoverview-currencyoverview-index" class="dropdown-toggle" href="/currency/overview"><span class="underline">ВЭД</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="vedDashboard" class="section-currencyoverview">
+      
+      
+        <a id="currencyoverview-currencyoverview-index" href="/currency/overview">Кабинет ВЭД</a>
+      
+    </li>
+  
+    
+    <li id="currencyInspection" class="section-corporate">
+      
+      
+        <a id="corporate-currencyinspection-currencyinspection-index" href="/currencyinspection">Валютный контроль</a>
+      
+    </li>
+  
+    
+    <li id="quotationDesk" class="section-corporate">
+      
+      
+        <a id="corporate-quotationdesk-index" href="/forex">Котировальная доска</a>
+      
+    </li>
+  
+    
+    <li id="alertService" class="section-null">
+      
+      
+        <a id="/ved-alerts" href="/ved-alerts">ВЭД.Alert</a>
+      
+    </li>
+  
+    
+    <li id="vedEvents" class="section-null">
+      
+      
+        <a id="/ved-events" href="/ved-events">События ВЭД</a>
+      
+    </li>
+  
+    
+    <li id="paymentCalendar" class="section-null">
+      
+      
+        <a id="/payment-calendar/offers" href="/payment-calendar/offers">Платёжный календарь</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="corporateServices" class="section-null dropdown">
+      
+        
+        
+          <a id="" class="dropdown-toggle" href="#"><span class="underline">Сервисы</span></a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="trafficLight" class="section-null">
+      
+      
+        <a id="/corporate/business-services/traffic-light" href="/corporate/business-services/traffic-light">Светофор</a>
+      
+    </li>
+  
+    
+    <li id="corporateServicesСertificates" class="section-null">
+      
+      
+        <a id="/corporate/certificates" href="/corporate/certificates">Запрос документов</a>
+      
+    </li>
+  
+    
+    <li id="authorities" class="section-null">
+      
+      
+        <a id="/authorities" href="/authorities">Доверенности</a>
+      
+    </li>
+  
+    
+    <li id="counterparties" class="section-null">
+      
+      
+        <a id="/counterparties" href="/counterparties">Справочник контрагентов</a>
+      
+    </li>
+  
+    
+    <li id="corporateServicesNotifications" class="section-null">
+      
+      
+        <a id="/notifications" href="/notifications">Информирование</a>
+      
+    </li>
+  
+    
+    <li id="partnerProducts" class="section-null">
+      
+      
+        <a id="/corporate/business-services/partner-products" href="/corporate/business-services/partner-products">Партнерские продукты</a>
+      
+    </li>
+  
+    
+    <li id="cashManagement" class="section-null">
+      
+      
+        <a id="/corporate/business-services/cash-management" href="/corporate/business-services/cash-management">Сервисы Cash Management</a>
+      
+    </li>
+  
+    
+    <li id="corporateReferralPrograms" class="section-null">
+      
+      
+        <a id="/corporate/referral-programs" href="/corporate/referral-programs">Пригласить друга</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+</ul>
+
+    <ul class="navigation-menu nav faq help-menu">
+      <li class="dropdown">
+        <a class="dropdown-toggle secondary-link" data-toggle="dropdown" id="faq-link" href="#">?</a>
+        <ul class="navigation-menu dropdown-menu">
+          <li><a href="/faq/select" title="Часто задаваемые вопросы">FAQ</a></li>
+          
+            <li><a href="/corporate/messages/form?topicId=CORPORATE_EMERGENCY">Сообщить о форс-мажоре</a></li>
+          
+          
+            <li class="restart-welcome-tour" style="display: none;"><a>Визуальный помощник</a></li>
+          
+          
+            <li class="show-feedback-popup"><a href="#">Обратная связь</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+      
+
+      <div id="contentbar" class="content statements-statement">
+        
+          <div class="page-header">
+            <h1>Отчёт по операциям <small></small></h1>
+            
+          </div>
+          
+          
+  <div class="top-cms-content">
+    <div class="cms-content"></div>
+    
+  </div>
+
+        
+
+        
+
+        
+          
+            <span id="alerts-container">
+  
+
+  
+
+  <div class="yearly-identification-warning-container hidden"></div>
+
+  
+
+  
+
+  
+
+  
+  
+  <div id="global-alerts-container">
+    
+
+
+    <script>
+      function removeFieldErrorsFromGlobal(context){
+        var globalErrors = $('#global-alerts-container .alert-error', context);
+        $('form .hasError:visible [name], form .error:visible [name]', context).each(function() {
+          globalErrors.filter("[data-key='" + this.name + "']").remove();
+        });
+        globalErrors.show();
+      }
+
+      
+      
+        $(function() {
+          setTimeout(function(){
+            removeFieldErrorsFromGlobal($('body'));
+          }, 100);
+        });
+      
+    </script>
+  </div>
+
+  
+
+<div id="page-alerts-container">
+  
+</div>
+</span>
+          
+        
+
+        
+
+
+
+
+
+
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/public/stylesheets/views/statement-print.css?bccf1cad34b" media="print">
+
+  <script src="/public/javascripts/Statement.js?bccf1cad34b"></script>
+  <script src="/public/javascripts/StatementCriteria.js?bccf1cad34b"></script>
+  <script>function Rewards(options) {
+
+  this.init = function(context){
+    $('.reward.ELIGIBLE', context).on('click', function() {
+      let transactionId = $(this).data('transaction-id'),
+        accountId = $(this).data('account-id'),
+        loyaltyProgramCode = $(this).data('loyalty-program');
+
+      let data = {
+        transactionId: transactionId,
+        accountId: accountId,
+        loyaltyProgramCode: loyaltyProgramCode,
+        authenticityToken: options.authenticityToken
+      };
+
+      $.post('/loyaltyprogram/' + loyaltyProgramCode + '/rewards/preview', data, function(response) {
+        $('#default-dialog', context).html(response).modal();
+      });
+    });
+  }
+}</script>
+  <script>function MerchantInfoClient(t){function a(a,e){if(!a)return $.Deferred();var r=t+"/merchants/logo/"+a+"?size=64";return e&&(r+="&terminal="+encodeURIComponent(e)),$.get({url:r,timeout:1e3,suppressErrors:!0})}this.setImageUrl=function(t){a(t.data("mcc"),t.data("terminal")).done(function(a){t.attr("src",a)})},this.setImages=function(t){t.each(function(t,e){var r=$(e);a(r.data("mcc"),r.data("terminal")).done(function(t){r.html('<img src="'+t+'" />')})})},this.setMerchantInfo=function(a,e){var r={};a.each(function(a,e){var n=$(this).data("mcc");if(n){var c=$(this).data("terminal"),o=t+"/merchants/info/"+n;c&&(o+="?size=64&terminal="+c),r[o]?r[o].push(e):r[o]=[e]}}),Object.keys(r).forEach(function(t,a){$.ajax({url:t,timeout:1e3,suppressErrors:!0,success:function(a){a&&r[t].forEach(function(t){var r=e.logoUrl;a.logoUrl&&r&&$(r,t).attr("src",a.logoUrl);var n=e.name;a.merchantName&&n&&$(n,t).html(a.merchantName);var c=e.categoryName,o=e.categoryNameHandler;a.categoryName&&(c&&$(c,t).html(a.categoryName),o&&o(a.categoryName,t))})}})})}}</script>
+
+
+  <script>
+    var statement;
+
+    var statementCriteria = new StatementCriteria({
+      searchType: '',
+      statementCriterionCount: 7,
+      statementSubCriterionCount: 5,
+      isAdvancedFilterUsed: false
+    });
+    initPage(statementCriteria.init);
+
+    $(function() {
+      statement = new Statement({
+        authenticityToken: 'be3baf0e854db0505c97257e4eafb490493d0dc2',
+        startDate: '01.01.2012',
+        endDate: '27.10.2025',
+        from: '01.09.2025',
+        until: '27.10.2025',
+        accountIds: [10417],
+        enableLoadLoyalty: false,
+        isAdvancedFilterUsed: false,
+        multipleAccountsSelected: false,
+        bulkPDFLimit: 3,
+        textDelete: 'Удалить',
+        textOfflineDelete: 'Удалить оффлайн выписку?',
+        merchantInformationEnabled: false,
+        creditAmountSubscriptionAccountIds: [],
+        statementToEmailSubscriptionAccountIds: [10417, 10426],
+        statementCriteria: statementCriteria,
+        rewards: new Rewards({authenticityToken: 'be3baf0e854db0505c97257e4eafb490493d0dc2'}),
+        reloadOnFilterChange: false,
+        messages: {
+          yarko:{
+            name: 'ЯРКО',
+            status: {
+              not_eligible: 'нет возмещения',
+              eligible: 'Возместить бонусами',
+              pending: 'В обработке',
+              done: 'Возмещено бонусами'
+            }
+          },
+          travel: {
+            name: 'TRAVEL',
+            status: {
+              not_eligible: 'нет возмещения',
+              eligible: 'Возместить милями',
+              pending: 'В обработке',
+              done: 'Возмещено милями'
+            }
+          },
+          cashback: {
+            name: 'Cash Back'
+          },
+          "cashback-platinum": {
+            name: 'Cash Back'
+          },
+          "mir-cashback-retired": {
+            name: 'Cash Back'
+          },
+          "mir-cashback-platinum": {
+            name: 'Cash Back'
+          },
+          "mir-cashback": {
+            name: 'Cash Back'
+          }
+        }
+      }, new MerchantInfoClient('https:\/\/i.bspb.ru\/cdn'));
+      statement.init();
+    });
+  </script>
+
+  <div class="submenu-body" id="statement-page">
+
+    
+
+    <form action="/statement" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" id="statement-form" class="form-horizontal">
+<input type="hidden" name="authenticityToken" value="be3baf0e854db0505c97257e4eafb490493d0dc2">
+<input type="hidden" name="___form_id" value="form:7be37289-1611-4e03-9cf0-cf995059c283">
+
+  
+  <input type="hidden" name="turnovers" value="false">
+  <input type="hidden" name="format">
+  <input type="hidden" name="kind">
+  <input type="hidden" name="sortBy">
+  <input type="hidden" name="sortOrder">
+  <input type="hidden" name="downloadDocument">
+
+  
+  
+    
+    
+
+<script>
+  function updateCurrencyByAccount(selectedCurrencyField) {
+    var symbol = selectedCurrencyField.attr('currency');
+    var prevCode = $('input[name="payment.currency"]').val();
+    var code = selectedCurrencyField.attr('currency-code');
+
+    $('form #currency').text(symbol);
+    $('form input[name="payment.currency"]').val(code);
+
+    if (prevCode !== code)
+      $('form input[name="payment.currency"]').trigger('change');
+  }
+</script>
+
+
+
+  <script>
+    $(function() {
+      $('select[name="accountId"]').on('change', function() {
+        
+          updateCurrencyByAccount($(this).find('option:selected'));
+        
+        $.noop();
+      })
+    });
+
+    if (!true) {
+      initPage(function(pageBody) {
+        var selector = $("#single-account", pageBody);
+        var alertsContainer = $('#page-alerts-container');
+
+        selector.addClass("accounts-stale");
+        $('.stale-warning', selector).html("").removeClass('hidden');
+
+        if (alertsContainer.find("#mainAccountsStaleError").length == 0) {
+          alertsContainer.append('<div id="mainAccountsStaleError" class="alert alert-error"></div>');
+        }
+      });
+    }
+  </script>
+  
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " id="single-account" data-name="accountId">
+      <label style="" class="control-label">
+        
+        
+          Счёт
+        
+      </label>
+      <div class="controls" style="">
+        
+    <select id="" name="accountId" class="account-select  required">
+      
+      
+      
+        
+        
+        <option value="10417" selected="" currency="₽" currency-code="RUB" branch="001-055" number="40702810048123102279" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="34958000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        Лицевой счёт:&nbsp;34&nbsp;958&nbsp;000.00&nbsp;₽
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10419" currency="€" currency-code="EUR" branch="001-055" number="40702978448123102753" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="54958000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;978&nbsp;4&nbsp;4812&nbsp;3102753:&nbsp;54&nbsp;958&nbsp;000.00&nbsp;€
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10423" currency="₽" currency-code="RUB" branch="001-056" number="40702810748321102279" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="12.34" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="true" data-dbo-id="6">
+        40702&nbsp;810&nbsp;7&nbsp;4832&nbsp;1102279:&nbsp;12.34&nbsp;₽
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10424" currency="€" currency-code="EUR" branch="001-056" number="40702978048321106590" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="4975" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        Евро-счёт:&nbsp;4&nbsp;975.00&nbsp;€
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10426" currency="€" currency-code="EUR" branch="075-056" number="40702978448321206590" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="20100" data-closed="false" data-owner-kpp="123456789" data-transit="true" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;978&nbsp;4&nbsp;4832&nbsp;1206590:&nbsp;20&nbsp;100.00&nbsp;€
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10427" currency="$" currency-code="USD" branch="075-056" number="40702784448321206599" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="100001" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;784&nbsp;4&nbsp;4832&nbsp;1206599:&nbsp;100&nbsp;001.00&nbsp;$
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10428" currency="$" currency-code="USD" branch="" number="40702840148320109301" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="5000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;840&nbsp;1&nbsp;4832&nbsp;0109301:&nbsp;5&nbsp;000.00&nbsp;$
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10429" currency="$" currency-code="USD" branch="075-056" number="40702840048320209301" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="0" data-closed="false" data-owner-kpp="123456789" data-transit="true" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;840&nbsp;0&nbsp;4832&nbsp;0209301:&nbsp;0.00&nbsp;$
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10432" currency="RSD" currency-code="RSD" branch="001-055" number="40702978448123101111" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="54958000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;978&nbsp;4&nbsp;4812&nbsp;3101111:&nbsp;54&nbsp;958&nbsp;000.00&nbsp;RSD
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10433" currency="₽" currency-code="RUB" branch="001-055" number="40802810048123102279" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="530000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40802&nbsp;810&nbsp;0&nbsp;4812&nbsp;3102279:&nbsp;530&nbsp;000.00&nbsp;₽
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10438" currency="CNY" currency-code="CNY" branch="001-055" number="40702156448123102753" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="54958000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;156&nbsp;4&nbsp;4812&nbsp;3102753:&nbsp;54&nbsp;958&nbsp;000.00&nbsp;CNY
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10439" currency="IRR" currency-code="IRR" branch="001-059" number="40702810048123101397" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="22239400178" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;810&nbsp;0&nbsp;4812&nbsp;3101397:&nbsp;22&nbsp;239&nbsp;400&nbsp;178.00&nbsp;IRR
+        </option>
+        
+        
+      
+      
+        
+        
+        <option value="10440" currency="₽" currency-code="RUB" branch="001-059" number="40702810598498335964" data-owner-name="ОАО &quot;Коудборн&quot;" data-owner-vatin="7830002293" data-available="1400000000" data-closed="false" data-owner-kpp="123456789" data-transit="false" data-is-eisgs="false" data-dbo-id="6">
+        40702&nbsp;810&nbsp;5&nbsp;9849&nbsp;8335964:&nbsp;1&nbsp;400&nbsp;000&nbsp;000.00&nbsp;₽
+        </option>
+        
+        
+      
+      
+    </select>
+    <div class="stale-warning hidden"></div>
+    
+    
+      или <a id="select-multiple-accounts" href="javascript:void(0);">выбрать несколько счетов</a>
+    
+    
+    
+  
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group  hidden" id="multiple-accounts" data-name="">
+      <label style="" class="control-label">
+        
+        
+          Счета
+        
+      </label>
+      <div class="controls" style="">
+        
+      <label class="checkbox"><input type="checkbox" id="select-all-accounts">Все счета</label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10417" checked="">
+          Лицевой счёт
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10419">
+          40702&nbsp;978&nbsp;4&nbsp;4812&nbsp;3102753
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10423">
+          40702&nbsp;810&nbsp;7&nbsp;4832&nbsp;1102279
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10424">
+          Евро-счёт
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10426">
+          40702&nbsp;978&nbsp;4&nbsp;4832&nbsp;1206590
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10427">
+          40702&nbsp;784&nbsp;4&nbsp;4832&nbsp;1206599
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10428">
+          40702&nbsp;840&nbsp;1&nbsp;4832&nbsp;0109301
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10429">
+          40702&nbsp;840&nbsp;0&nbsp;4832&nbsp;0209301
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10432">
+          40702&nbsp;978&nbsp;4&nbsp;4812&nbsp;3101111
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10433">
+          40802&nbsp;810&nbsp;0&nbsp;4812&nbsp;3102279
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10438">
+          40702&nbsp;156&nbsp;4&nbsp;4812&nbsp;3102753
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10439">
+          40702&nbsp;810&nbsp;0&nbsp;4812&nbsp;3101397
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox" disabled="" name="accountId" value="10440">
+          40702&nbsp;810&nbsp;5&nbsp;9849&nbsp;8335964
+        </label>
+      
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+    
+  
+
+  
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          Период
+        
+      </label>
+      <div class="controls" style="">
+        
+    <table class="form-table" style="display: inline-table">
+      <tbody><tr>
+        <td>
+          <div id="from-date" class="input-append date">
+            <input type="text" class="input-small datepicker-input" name="from" value="01.09.2025" tabindex="1" autocomplete="off" maxlength="10">
+            <span class="add-on"><i class="icon-calendar"></i></span>
+          </div>
+        </td>
+        <td id="defined-periods" rowspan="2">
+          <div>
+
+
+  <a class="preset-date-period" data-from="26.10.2025" data-until="26.10.2025" href="#">Вчера</a>
+  |
+
+  <a class="preset-date-period" data-from="20.10.2025" data-until="26.10.2025" href="#">Прошлая неделя</a>
+  |
+
+  <a class="preset-date-period" data-from="01.09.2025" data-until="30.09.2025" href="#">Прошлый месяц</a>
+  </div><div>
+
+  <a class="preset-date-period" data-from="27.10.2025" data-until="27.10.2025" href="#">Сегодня</a>
+  |
+
+  <a class="preset-date-period" data-from="27.10.2025" data-until="27.10.2025" href="#">Текущая неделя</a>
+  |
+
+  <a class="preset-date-period" data-from="01.10.2025" data-until="27.10.2025" href="#">Текущий месяц</a>
+  </div><div>
+
+  <a class="preset-date-period" data-from="01.09.2025" data-until="27.10.2025" href="#">С начала прошлого месяца до сегодня</a>
+  
+
+</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="until-date" class="input-append date">
+            <input type="text" class="input-small datepicker-input" name="until" value="27.10.2025" tabindex="2" autocomplete="off" maxlength="10">
+            <span class="add-on"><i class="icon-calendar"></i></span>
+          </div>
+        </td>
+      </tr>
+    </tbody></table>
+  
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+  
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+      <label class="checkbox">
+        <input type="checkbox" name="compact">
+        Краткая выписка
+      </label>
+      <input type="checkbox" class="hidden" name="detailed">
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+  
+
+  
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+    <a id="toggle-advanced-options" href="#">Расширенный фильтр</a>
+  
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+  <div id="advanced-options" style="display: none">
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          Тип
+        
+      </label>
+      <div class="controls" style="">
+        
+      <span class="transaction-type">
+      <label class="checkbox inline">
+        <input id="filter-debit" name="filter.debit" type="checkbox" checked="">
+        
+          Списания
+        
+        
+      </label>
+      <label class="checkbox inline">
+        <input id="filter-credit" name="filter.credit" type="checkbox" checked="">
+        
+          Поступления
+        
+        
+      </label>
+    </span>
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+    
+      
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group  hidden" id="notification-info" data-name="" style="display: block;">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+        <label>Получайте на свой телефон информацию о зачислении на счет. Подключите <a target="_blank" href="/notifications">уведомления по SMS/e-mail.</a></label>
+      
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+    
+
+    
+
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          Вид поиска
+        
+      </label>
+      <div class="controls" style="">
+        
+      <div id="search-type" class="btn-group inline-block" data-toggle="buttons-radio">
+        <button id="common-filter" class="btn active criteria-field-button">Общий</button>
+        <button id="criteria-filter" class="btn criteria-field-button">По критериям</button>
+      </div>
+    <input type="hidden" name="filter.searchType" value="common-filter" disabled="disabled">
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+    <div id="text-search">
+      
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+        <div class="input-prepend">
+          <span class="icon-search add-on"></span>
+          <input type="text" class="span7" name="search" placeholder="Контрагент, назначение, сумма…" value="">
+        </div>
+      
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+    </div>
+
+    <div id="criteria-search" style="display: none;">
+      <div id="criteria">
+        
+          <div class="criterion-group">
+            
+              
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+  <div class="criterion-row">
+    <span class="criteria-field-span">
+      <select class="criteria-field-span criterion-field">
+        
+        
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        
+      <option value="" disabled="" hidden="" selected="">Выберите</option><option value="partyName" data-add-text="+ Контрагент">Контрагент</option><option value="partyVatin" data-add-text="+ ИНН">ИНН</option><option value="description" data-add-text="+ Назначение">Назначение</option><option value="amount" data-add-text="+ Сумма">Сумма</option><option value="docNumber" data-add-text="+ Документ">Документ</option><option value="partyAccount" data-add-text="+ Счёт">Счёт</option><option value="partyBic" data-add-text="+ БИК">БИК</option><option value="partyBank" data-add-text="+ Банк">Банк</option></select>
+      <input type="hidden" class="hiddenCriterionField" name="hiddenCriterionField" value="amount">
+    </span>
+
+    <select class="criteria-field-span relation required">
+      
+      
+      
+      
+      
+      
+      
+      
+    <option value="eq">Равно</option><option value="neq">Не равно</option><option value="gt">Больше</option><option value="lt">Меньше</option><option value="bt">От и до</option></select>
+
+    <input type="text" class="criteria-field-span criterion-text-value hidden criterion-text-param required" value="" maxlength="160" disabled="" style="display: none;">
+
+    <span class="criterion-amount-param hidden" style="display: inline;">
+      <input type="text" step="0.01" class="criteria-field-span criterion-amount-value-1 amount required" value="" data-validate-custom="statement.validateCriteriaAmount">
+      <span>—</span>
+      <input type="text" step="0.01" class="criteria-field-span criterion-amount-value-2 amount required" value="" data-validate-custom="statement.validateCriteriaAmountTo">
+    </span>
+
+    <a class="remove-criterion criterion-action">
+      <img src="/public/images/remove.svg" alt="">
+    </a>
+  </div>
+
+  <div class="criterion-action">
+    <span class="criteria-field-span"></span>
+    <a class="add-sub-criterion">+ Сумма</a>
+  </div>
+
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+            
+          </div>
+       
+      </div>
+
+      
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+        <div class="criteria-controls">
+          <a class="add-criterion">
+            <img src="/public/images/add.svg" alt="">
+            Добавить критерий
+          </a>
+          <span class="pull-right">
+            <a id="clear-all-criteria">Очистить все</a>
+          </span>
+        </div>
+      
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button id="query-button" class="btn btn-primary btn-query" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Нижняя часть&quot;,&quot;eventLabel&quot;:&quot;Клик по \&quot;Выписка\&quot;&quot;}">Выписка</button>
+    
+      <button id="query-turnovers-button" class="btn btn-primary btn-query" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Нижняя часть&quot;,&quot;eventLabel&quot;:&quot;Клик по \&quot;Обороты\&quot;&quot;}">Обороты</button>
+    
+    
+    
+      <div id="statement-export" class="btn-group">
+        
+          <button id="statement-export-button" class="btn" data-disabled="true" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Нижняя часть&quot;,&quot;eventLabel&quot;:&quot;Клик по \&quot;Экспорт выписки\&quot;&quot;}" disabled="">Экспорт</button>
+        
+        
+      </div>
+    
+
+    
+      <a id="signed-statement-button" href="/corporate/signedstatements" class="btn btn-secondary">
+        Заказать выписку с УКЭП
+      </a>
+    
+
+    
+
+    
+      <div id="statement-export-modal-form" class="modal hidden" tabindex="-1">
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Экспорт выписки</h3>
+  </div>
+
+  <div class="modal-body">
+    <div id="file-size-warning-modal" class="alert alert-warning" style="display: none;">
+      Установлено ограничение на объем файла, который можно отправить по электронной почте. Для успешной отправки файл не должен содержать более 20 тысяч записей.
+    </div>
+
+    <div id="error-email-validation" class="alert alert-error hidden" style="display: none;">
+      Неверный формат электронной почты
+    </div>
+
+    <div id="statement-to-email-exceeded-error" class="alert alert-error hidden" style="display: none;">
+      В рамках одной сессии можно отправить выписку на email не более 3 раз
+    </div>
+
+    <div id="send-to-email-error" class="alert alert-error hidden" style="display: none;">
+      Ошибка отправки информационного сообщения
+    </div>
+
+    <div id="send-to-email-success" class="alert alert-info hidden" style="display: none;">
+      Информационное сообщение отправлено
+    </div>
+
+    <input type="hidden" name="sendLimitExceeded" value="false">
+
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " id="statement-modal-export-type" data-name="">
+      <label style="" class="control-label">
+        
+        
+          Тип экспорта
+        
+      </label>
+      <div class="controls" style="">
+        
+      
+
+<select name="exportType" size="1">
+  
+  
+  
+    <option value="download">
+      Сохранить на компьютер
+    </option>
+  
+    <option value="email">
+      Отправить на email
+    </option>
+  
+
+  
+</select>
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " id="to-email" data-name="" style="display: none;">
+      <label style="" class="control-label">
+        
+        
+          E-MAIL
+        
+      </label>
+      <div class="controls" style="">
+        
+      <input type="email" name="toEmail" maxlength="64" class="required span4" value="" placeholder="example@domain.com">
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " id="statement-modal-format" data-name="">
+      <label style="" class="control-label">
+        
+        
+          Формат
+        
+      </label>
+      <div class="controls" style="">
+        
+      
+
+  <span class="radio-group-item ">
+    <label class="radio inline">
+      <input type="radio" name="statementModalFormat" value="pdf" checked="">
+      <span class="">PDF</span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+  <span class="radio-group-item ">
+    <label class="radio inline">
+      <input type="radio" name="statementModalFormat" value="xlsx">
+      <span class="">Excel</span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+  <span class="radio-group-item ">
+    <label class="radio inline">
+      <input type="radio" name="statementModalFormat" value="1c">
+      <span class="">1C</span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+  <span class="radio-group-item ">
+    <label class="radio inline">
+      <input type="radio" name="statementModalFormat" value="dbf">
+      <span class="">DBF</span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+
+    
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " id="statement-modal-kind" data-name="">
+      <label style="" class="control-label">
+        
+        
+          Вид выписки
+        
+      </label>
+      <div class="controls" style="">
+        
+      
+
+  <span class="radio-group-item radio-group-item-vertical">
+    <label class="radio inline">
+      <input type="radio" name="statementModalKind" value="statement" checked="">
+      <span class="">Выписка</span>
+      
+        <span class="extended-text"></span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+  <span class="radio-group-item radio-group-item-vertical">
+    <label class="radio inline">
+      <input type="radio" name="statementModalKind" value="statementAndDocuments" disabled="">
+      <span class="">Выписка и платёжные документы</span>
+      
+        <span class="extended-text"></span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+  <span class="radio-group-item radio-group-item-vertical">
+    <label class="radio inline">
+      <input type="radio" name="statementModalKind" value="documents" disabled="">
+      <span class="">Платёжные документы</span>
+      
+        <span class="extended-text"></span>
+      
+    </label>
+    
+      
+    
+  </span>
+
+    
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal">Отмена</button>
+    <button id="modal-save-button" class="btn btn-primary">Сохранить</button>
+    <button id="modal-send-button" class="btn btn-primary" style="display: none;">Отправить</button>
+  </div>
+
+  <script>function StatementModal(exportProperties) {
+  var pub = this;
+  var page, form, typeSelector, sizeWarning, emailInputItem, saveButton, sendButton,
+    emailValidationError, sendLimitExceeded, limitExceedError, modalWindow, sendError,
+    sendSuccess, formatSelector;
+  var webAnalyticsExportFormats = {
+    'pdf': 'PDF',
+    'xlsx': 'Excel',
+    '1c': '1C',
+    'dbf': 'DBF'
+  }
+  var webAnalyticsStatementKind = {
+    statement: 'Выписка',
+    statementAndDocuments: 'Выписка и платёжные документы',
+    documents: 'Платежные документы'
+  }
+
+  pub.init = function(context) {
+    page = context;
+    form = $('#statement-form', page);
+    modalWindow = $('#statement-export-modal-form', page);
+    modalWindow.on('shown.bs.modal', beforeOpenModal);
+    typeSelector = $('#statement-modal-export-type select', modalWindow);
+    sizeWarning = $('#file-size-warning-modal', modalWindow);
+    emailInputItem = $('#to-email', modalWindow);
+    saveButton = $('#modal-save-button', modalWindow);
+    sendButton = $('#modal-send-button', modalWindow);
+    emailValidationError = $('#error-email-validation', modalWindow);
+    sendLimitExceeded = $('input[name="sendLimitExceeded"]', form);
+    limitExceedError = $('#statement-to-email-exceeded-error', form);
+    sendError = $('#send-to-email-error', modalWindow);
+    sendSuccess = $('#send-to-email-success', modalWindow);
+    formatSelector = $('#statement-modal-format', modalWindow);
+    emailInputItem.find('input').on('change', emailChange);
+    typeSelector.on('change', typeChange);
+    saveButton.on('click', exportStatement);
+    sendButton.on('click', sendStatement);
+    formatSelector.on('click', toggleKind);
+    setUserDefaults();
+  }
+
+  function setUserDefaults() {
+    if (exportProperties.exportType) {
+      $('option[value="' + exportProperties.exportType + '"]').prop('selected', true)
+    }
+    typeChange()
+    if (exportProperties.exportEmail) {
+      emailInputItem.find('input').val(exportProperties.exportEmail)
+    }
+    if (exportProperties.exportFormat) {
+      $('input[name=statementModalFormat][value="' + exportProperties.exportFormat + '"]').prop('checked', true)
+    }
+    if (exportProperties.exportKind) {
+      $('input[name=statementModalKind][value="' + exportProperties.exportKind + '"]').prop('checked', true)
+    }
+  }
+
+  function beforeOpenModal() {
+    typeChange();
+    if (sendLimitExceeded.val() === 'true') {
+      processExceeded();
+    }
+  }
+
+  function typeChange() {
+    $('.alert', modalWindow).hide();
+    var showEmailItems = typeSelector.val() === 'email';
+    sizeWarning.toggle(showEmailItems);
+    emailInputItem.toggle(showEmailItems);
+    sendButton.toggle(showEmailItems);
+    saveButton.toggle(!showEmailItems);
+    toggleKind();
+  }
+
+  function updateFormat() {
+    var format = $('#statement-modal-format input:checked').val();
+    updateSorting(format);
+    form.find('input[name=format]').val(format);
+  }
+
+  function updateKind() {
+    var kind = $('#statement-modal-kind input:checked').val();
+    form.find('input[name=kind]').val(kind);
+  }
+
+  function toggleKind() {
+    var format = $('#statement-modal-format input:checked').val();
+    if ('pdf' == format) {
+      $('#statement-modal-kind input[value="statementAndDocuments"]', modalWindow).closest('.radio-group-item').show();
+      $('#statement-modal-kind input[value="documents"]', modalWindow).closest('.radio-group-item').show();
+    } else {
+      $('#statement-modal-kind input[value="statement"]', modalWindow).prop("checked", true);
+      $('#statement-modal-kind input[value="statementAndDocuments"]', modalWindow).closest('.radio-group-item').hide();
+      $('#statement-modal-kind input[value="documents"]', modalWindow).closest('.radio-group-item').hide();
+    }
+  }
+
+  function emailChange() {
+    if (emailValidationError.is(':visible')) emailValidationError.hide();
+    if (sendSuccess.is(':visible')) sendSuccess.hide();
+    if (sendError.is(':visible')) sendError.hide();
+  }
+
+
+  function exportStatement() {
+    updateFormat();
+    updateKind();
+    sendWebAnalytics("Сохранить на компьютер");
+    prepareBulkPrint();
+    form.find('input[name=downloadDocument]').val(true);
+    if (form.find('input[name=offline]').is(':checked')) {
+      $('#offline-statements-overview', page).find('.alert-error,.alert-warning').remove();
+      $.post(form.attr('action'), form.serialize(), function(data) {
+        form.find('input[name=offline]').prop('checked', false).prop('disabled', true);
+        $('#offline-statements-overview', page).replaceWith(data);
+        modalWindow.modal('hide');
+      });
+    } else {
+      form.attr('target', '_blank');
+      form.addClass('no-loader').addClass('no-disable-on-submit').submit();
+    }
+
+    return false;
+  }
+
+  function sendStatement() {
+    updateFormat();
+    updateKind();
+    sendWebAnalytics("Отправить на email");
+    prepareBulkPrint();
+    var email = emailInputItem.find('input').val();
+    if (validator.validators.email(email)) {
+      emailValidationError.show();
+    } else {
+      $.post('/statement-to-email', form.serialize(), function(result) {
+        switch (result.result) {
+          case 'ok':
+            processSendSuccess();
+            break;
+          case 'error':
+            if (result.sendLimitExceeded) processExceeded();
+            else processSendError();
+            break;
+        }
+        sendLimitExceeded.val(result.sendLimitExceeded);
+      });
+    }
+
+    return false;
+  }
+
+  function sendWebAnalytics(action) {
+    var format = $('#statement-modal-format input:checked').val();
+    var kind = $('#statement-modal-kind input:checked').val();
+    var webAnalyticsParams = {
+      eventCategory: "Интернет-банк ЮЛ / Счета / Отчет по операциям / Экспорт",
+      eventAction: action,
+      eventLabel: webAnalyticsExportFormats[format] + '_' + webAnalyticsStatementKind[kind]
+    }
+    window.WebAnalytics.sendEvent(webAnalyticsParams);
+  }
+
+  function processSendSuccess() {
+    $('.alert', modalWindow).hide();
+    sendSuccess.show();
+    sendButton.hide();
+  }
+
+  function processSendError() {
+    $('.alert', modalWindow).hide();
+    sendError.show();
+  }
+
+  function processExceeded() {
+    limitExceedError.show();
+    sendButton.prop('disabled', true);
+    emailInputItem.prop('disabled', true);
+    sizeWarning.hide();
+  }
+
+  function prepareBulkPrint() {
+    form.find('[name=txId]').remove();
+    form.find('[name=groupTxArchivalCodes]').remove();
+
+    $('.statement input[name=txId]:checked').each(function() {
+          var txId = $(this).val();
+          $('<input type="hidden" name="txId" value="' + txId + '">').appendTo(form);
+          if (txId === "0") {
+              var archivalCode = $(this).data('archival-code');
+              $('<input type="hidden" name="groupTxArchivalCodes" value="' + archivalCode + '">').appendTo(form);
+          }
+        });
+  }
+
+  function updateSorting(format) {
+    if ('pdf' == format) {
+      var sortOrder = "ascending";
+      var sortBy = $(".headerSortUp").data("column");
+      if (sortBy) sortOrder = "descending";
+      if (!sortBy) sortBy = $(".headerSortDown").data("column");
+    }
+    $("input[name=sortBy]", form).val(sortBy || '');
+    $("input[name=sortOrder]", form).val(sortOrder || '');
+  }
+
+}</script>
+
+  <script>
+    initPage(new StatementModal({
+      exportType: '',
+      exportEmail: '',
+      exportFormat: '',
+      exportKind: ''
+    }).init);
+  </script>
+</div>
+    
+
+    
+  </div>
+
+</form>
+
+<div id="criterion-template" class="hidden criterion-group">
+  
+
+
+
+
+  
+  
+
+  
+  
+    <div class="control-group " data-name="">
+      <label style="" class="control-label">
+        
+        
+          
+        
+      </label>
+      <div class="controls" style="">
+        
+  <div class="criterion-row">
+    <span class="criteria-field-span">
+      <select class="criteria-field-span criterion-field">
+        <option value="" disabled="" hidden="" selected="">Выберите</option>
+        
+          <option value="partyName" data-add-text="+ Контрагент">Контрагент</option>
+          <option value="partyVatin" data-add-text="+ ИНН">ИНН</option>
+          <option value="description" data-add-text="+ Назначение">Назначение</option>
+          <option value="amount" data-add-text="+ Сумма">Сумма</option>
+          <option value="docNumber" data-add-text="+ Документ">Документ</option>
+          <option value="partyAccount" data-add-text="+ Счёт">Счёт</option>
+          <option value="partyBic" data-add-text="+ БИК">БИК</option>
+          <option value="partyBank" data-add-text="+ Банк">Банк</option>
+        
+        
+      </select>
+      <input type="hidden" class="hiddenCriterionField" name="hiddenCriterionField">
+    </span>
+
+    <select class="criteria-field-span relation required">
+      <option value="" disabled="" hidden="" selected=""></option>
+      <option value="eq">Равно</option>
+      <option value="neq">Не равно</option>
+      <option value="gt">Больше</option>
+      <option value="lt">Меньше</option>
+      <option value="bt">От и до</option>
+      <option value="cn">Содержит</option>
+      <option value="ncn">Не содержит</option>
+    </select>
+
+    <input type="text" class="criteria-field-span criterion-text-value hidden criterion-text-param required" value="" maxlength="160" disabled="">
+
+    <span class="criterion-amount-param hidden">
+      <input type="text" step="0.01" class="criteria-field-span criterion-amount-value-1 amount required" value="" data-validate-custom="statement.validateCriteriaAmount" disabled="">
+      <span>—</span>
+      <input type="text" step="0.01" class="criteria-field-span criterion-amount-value-2 amount required" value="" data-validate-custom="statement.validateCriteriaAmountTo" disabled="">
+    </span>
+
+    <a class="remove-criterion criterion-action hidden">
+      <img src="/public/images/remove.svg" alt="">
+    </a>
+  </div>
+
+  <div class="criterion-action hidden">
+    <span class="criteria-field-span"></span>
+    <a class="add-sub-criterion"></a>
+  </div>
+
+        
+
+
+
+        
+        
+      </div>
+    </div>
+  
+
+</div>
+
+    
+      <form action="/statement-to-email-subscriptions/form" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" id="statement-subscription-form" class="hidden">
+<input type="hidden" name="authenticityToken" value="be3baf0e854db0505c97257e4eafb490493d0dc2">
+<input type="hidden" name="___form_id" value="form:2766ba5c-5be7-445c-a3a2-aa4bc45ef2af">
+
+  <input type="hidden" name="subscriptionAccountIds">
+  <input type="hidden" name="subscriptionDetailed">
+  <input type="hidden" name="subscriptionFormat">
+  <input type="hidden" name="subscriptionToEmail">
+
+</form>
+    
+
+    
+      <script>
+        function toggleHolds(accountId, additionalColumns) {
+          var container = $('#statement-' + accountId);
+          if ($('#hold-loading', container).length != 0) {
+            $('#hold-loading', container).toggle('fast');
+            $.get('/accounts/holds?accountId=' + accountId + '&additionalColumns=' + additionalColumns, function(data) {
+              data = $(data).hide();
+              $('#hold-loading', container).replaceWith(data);
+              $('.hold', container).toggle('fast');
+            });
+          }
+          else {
+            $('.hold', container).toggle('fast');
+          }
+          $('#reserved .icon', container).toggleClass('icon-arrow-down').toggleClass('icon-arrow-up');
+        }
+      </script>
+
+      <div class="clearfix no-margin-and-padding">
+
+        <button class="btn pull-right m-l-2 hidden export-btn" id="btn-bulk-print" data-format="pdf" data-kind="documents" title="За один раз можно распечатать не более 3 транзакций" disabled="">Распечатать<span class="count"> (0)</span>
+        </button>
+
+        <button id="window-print" class="btn pull-right" onclick="window.print()" title="Распечатать">
+  <i class="icon-print icon-white"></i>
+</button>
+
+        
+          <div class="btn-group pull-right m-r-2" id="btn-group-export">
+            <button class="btn dropdown-toggle" data-toggle="dropdown" href="#" disabled="" title="Выберите менее 3 платёжных документов">
+              PDF
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-button-list" hidden="">
+              <li>
+                <button id="btn-export-state" class="btn export-btn" data-format="pdf" data-kind="statement" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Выписка на компьютер&quot;,&quot;eventLabel&quot;:&quot;Выписка&quot;}">Выписка</button>
+              </li>
+              <li>
+                <button id="btn-export-stateanddoc" class="btn export-btn" data-format="pdf" data-kind="statementAndDocuments" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Выписка на компьютер&quot;,&quot;eventLabel&quot;:&quot;Выписка и платёжные документы&quot;}" disabled="">Выписка и платёжные документы
+                </button>
+              </li>
+              <li>
+                <button id="btn-export-state-doc-swift" class="btn export-btn" data-format="pdf" data-kind="statementWithDocumentsAndSwifts" data-web-analytics-label="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Выписка на компьютер&quot;,&quot;eventLabel&quot;:&quot;Выписка и платёжные документы&quot;}" disabled="">
+                  Выписка, SWIFT и платёжные документы
+                </button>
+              </li>
+              <li>
+                <button id="btn-export-doc" class="btn export-btn" data-format="pdf" data-kind="documents" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Выписка на компьютер&quot;,&quot;eventLabel&quot;:&quot;Платежные документы&quot;}" disabled="">Платёжные документы
+                  <span class="count"></span>
+                </button>
+              </li>
+              <li>
+                <button id="btn-export-swift" class="btn export-btn" data-format="pdf" data-kind="swifts" data-web-analytics-label="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Выписка на компьютер&quot;,&quot;eventLabel&quot;:&quot;Платежные документы&quot;}" disabled="">
+                  SWIFT
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          
+            <a class="btn pull-right" id="btn-statement-subscriptions" href="/statement-to-email-subscriptions" target="_blank" style="margin-right: 9px; display: none;" data-web-analytics-event="{&quot;eventCategory&quot;:&quot;Интернет-банк ЮЛ / Счета / Отчет по операциям&quot;,&quot;eventAction&quot;:&quot;Нижняя часть&quot;,&quot;eventLabel&quot;:&quot;Клик по \&quot;Подписаться на выписку\&quot;&quot;}">Подписаться на выписку
+            </a>
+          
+        
+      </div>
+
+      <script src="/public/javascripts/jquery.flot.min.js"></script>
+
+<div class="statement-with-header-container">
+  <div class="statement-header clearfix">
+    <h1 class="hidden printable">Отчёт по операциям</h1>
+
+    <div class="clearfix no-margin-and-padding">
+      
+        <div class="statement-company-block">
+          <h3 class="statement-company-name">ОАО "Коудборн"</h3>
+          <div class="statement-vatin">ИНН: 7830002293</div>
+        </div>
+      
+    </div>
+
+    <div>Период: 01.09.2025 - 27.10.2025</div>
+
+    
+      
+      
+        <div id="statement-infographics" class="fold-container  statements-statistic infographic print-hidden">
+  <h2 class="submenu-heading">
+    <i class="icon"></i>
+    <span>Топ контрагентов</span>
+    <i class="icon-fold-marker"></i>
+  </h2>
+  <div class="submenu-body">
+    
+  <div class="statements-statistic-container">
+    <div class="statements-radio">
+      <span class="muted">Показать</span>
+      <label class="radio">
+        <input type="radio" name="statisticType" value="incoming">
+        Поступления
+      </label>
+
+      <label class="radio">
+        <input type="radio" name="statisticType" value="outgoing">
+        Списания
+      </label>
+    </div>
+
+    <div id="incoming-alert" class="alert alert-info" hidden="" style="display: none;">По выбранным параметрам зачислений не найдено</div>
+    <div id="outgoing-alert" class="alert alert-info" hidden="" style="display: none;">По выбранным параметрам списаний не найдено</div>
+
+    <div class="chart-container">
+      <div id="chart-holder-incoming" class="chart-holder" style="padding: 0px; position: relative;">
+      <canvas class="flot-base" width="927" height="262" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 742px; height: 210px;"></canvas><div class="flot-text" style="position: absolute; inset: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; inset: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 194px; left: 21px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 162px; left: 1px; text-align: right;">1000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 129px; left: 1px; text-align: right;">2000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 97px; left: 1px; text-align: right;">3000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 65px; left: 1px; text-align: right;">4000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 32px; left: 1px; text-align: right;">5000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">6000</div></div></div><canvas class="flot-overlay" width="927" height="262" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 742px; height: 210px;"></canvas></div>
+      <div id="chart-legend-incoming" class="chart-legend"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #D0021B;overflow:hidden"></div></div></td><td class="legendLabel">ОАО "Эрмитаж 1754"</td></tr></tbody></table></div>
+    </div>
+    <div class="chart-container">
+      <div id="chart-holder-outgoing" class="chart-holder" style="padding: 0px; position: relative; display: none;">
+      <canvas class="flot-base" width="927" height="262" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 742px; height: 210px;"></canvas><div class="flot-text" style="position: absolute; inset: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; inset: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 39px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 194px; left: 1px; text-align: right;">-125000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 155px; left: 1px; text-align: right;">-100000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 116px; left: 8px; text-align: right;">-75000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 78px; left: 8px; text-align: right;">-50000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 39px; left: 8px; text-align: right;">-25000</div></div></div><canvas class="flot-overlay" width="927" height="262" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 742px; height: 210px;"></canvas></div>
+      <div id="chart-legend-outgoing" class="chart-legend" style="display: none;"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #D0021B;overflow:hidden"></div></div></td><td class="legendLabel">ООО "Меншиковский дворец 1711"</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #079EDD;overflow:hidden"></div></div></td><td class="legendLabel">ЗАО "Спас на крови 1907"</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #DBA11B;overflow:hidden"></div></div></td><td class="legendLabel">ИП "Петр Алексеевич 1672"</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #009898;overflow:hidden"></div></div></td><td class="legendLabel">ЗАО "Кунсткамера 1727"</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #F2DEDE;overflow:hidden"></div></div></td><td class="legendLabel">ООО "Петропавловская крепость 1703"</td></tr></tbody></table></div>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+<script>function Fold(options) {
+  var pub = this;
+
+  pub.init = function() {
+    $('.submenu-heading', options.foldContainer).on('click', function() {
+      options.foldContainer.toggleClass('folded');
+      options.foldContainer.trigger('folding', options.foldContainer.hasClass('folded'));
+    })
+  }
+}</script>
+<script>
+  initPage(new Fold({
+    foldContainer: $('div#statement-infographics.fold-container')
+  }).init);
+</script>
+
+<script>function StatementsInfographic(options) {
+  var page;
+  var barsColor = ['#D0021B', '#079EDD', '#DBA11B', '#009898', '#F2DEDE'];
+  var incomingRadioButtonValue = 'incoming';
+  var outgoingRadioButtonValue = 'outgoing';
+
+  this.init = function(context) {
+    page = context;
+
+    drawGraph(options.incomingContainerId, options.incomingLegendContainerId, options.incomingAlertId, options.incomingData);
+    drawGraph(options.outgoingContainerId, options.outgoingLegendContainerId, options.outgoingAlertId, options.outgoingData);
+
+    initRadioButton();
+    initFoldHandler();
+  }
+
+  function initRadioButton() {
+    $('.statements-radio [type="radio"]', page).on("click", function (e) {
+      var checkedValue = e.target.value;
+      toggleCharts(checkedValue);
+    });
+    if (options.incomingData.length != 0) {
+      $("[value='incoming']", page).prop('checked', true);
+    }
+    if (options.incomingData.length == 0 && options.outgoingData.length != 0) {
+      $("[value='outgoing']", page).prop('checked', true);
+    }
+    toggleCharts($("[name='statisticType']:checked", page).val());
+  }
+
+  function drawGraph(containerId, legendId, alertId, data) {
+    if (isInfographicsDrawn(containerId) || isInfographicsFolded()) return;
+
+    if (!data || data.length == 0) {
+      $(alertId, page).show();
+      return;
+    } else {
+      $(alertId, page).hide();
+    }
+
+    var options = {
+      series: {
+        bars: {
+          show: true,
+          barWidth: 0.5,
+          align: "center"
+        }
+      },
+      legend: {
+        show: true,
+        container: $(legendId)
+      },
+      xaxis: {
+        show: false,
+        min: -0.5,
+        max: 4.5
+      },
+      grid: {
+        hoverable: true,
+        borderWidth: 1
+      }
+    }
+
+    $(containerId).show();
+    $(containerId).plot(prepareData(data), options);
+    bindToolTip(containerId);
+  }
+
+  function prepareData(data) {
+    var dataForPlot = []
+
+    $.each(data, function(index, elem) {
+      dataForPlot.push({
+        label: elem.name,
+        data: [[index, elem.sumOfTransactions]],
+        color: barsColor[index]
+      });
+    });
+
+    return dataForPlot
+  }
+
+  function bindToolTip(containerId) {
+    var tooltip = $('.graph-tooltip', page);
+    tooltip.appendTo("body");
+
+    $(containerId).bind('plothover', function(event, pos, item) {
+      if (!item) {
+        tooltip.hide();
+        return;
+      }
+
+      tooltip.html(item.series.label + " " + item.datapoint[1] + " ₽")
+        .css({top: item.pageY, left: item.pageX})
+        .fadeIn(1);
+    });
+  }
+
+  function initFoldHandler() {
+    $('#statement-infographics', page).on('folding', function(e, folded) {
+
+      if (!folded) {
+        drawGraph(options.incomingContainerId, options.incomingLegendContainerId, options.incomingAlertId, options.incomingData);
+        drawGraph(options.outgoingContainerId, options.outgoingLegendContainerId, options.outgoingAlertId, options.outgoingData);
+
+        var checkedValue = $('.statements-radio [type="radio"]', page).val();
+        toggleCharts(checkedValue);
+      }
+
+      $.post('/statements-customization/set-statements-infographic-folding', {
+        authenticityToken: options.authenticityToken,
+        folded: folded
+      });
+    });
+  }
+
+  function isInfographicsDrawn(containerId) {
+    return $(containerId + " .flot-base", page).length == 1;
+  }
+
+  function isInfographicsFolded() {
+    return $('#statement-infographics', page).hasClass("folded");
+  }
+
+  function toggleCharts(checkedValue) {
+    $(options.incomingContainerId, page).toggle(checkedValue == incomingRadioButtonValue);
+    $(options.incomingLegendContainerId, page).toggle(checkedValue == incomingRadioButtonValue);
+    $(options.incomingAlertId, page).toggle(checkedValue == incomingRadioButtonValue && (!options.incomingData || options.incomingData.length == 0));
+
+    $(options.outgoingContainerId, page).toggle(checkedValue == outgoingRadioButtonValue);
+    $(options.outgoingLegendContainerId, page).toggle(checkedValue == outgoingRadioButtonValue);
+    $(options.outgoingAlertId, page).toggle(checkedValue == outgoingRadioButtonValue && (!options.outgoingData || options.outgoingData.length == 0));
+  }
+}</script>
+
+<script>
+  initPage(new StatementsInfographic({
+    isCorporate: 'true',
+    authenticityToken: 'be3baf0e854db0505c97257e4eafb490493d0dc2',
+    incomingData: [{"name":"ОАО \"Эрмитаж 1754\"","sumOfTransactions":5870.14}],
+    incomingContainerId: '#chart-holder-incoming',
+    incomingLegendContainerId: '#chart-legend-incoming',
+    incomingAlertId: '#incoming-alert',
+    outgoingData: [{"name":"ООО \"Меншиковский дворец 1711\"","sumOfTransactions":-99246.37},{"name":"ЗАО \"Спас на крови 1907\"","sumOfTransactions":-44856.96},{"name":"ИП \"Петр Алексеевич 1672\"","sumOfTransactions":-28599.12},{"name":"ЗАО \"Кунсткамера 1727\"","sumOfTransactions":-23508.22},{"name":"ООО \"Петропавловская крепость 1703\"","sumOfTransactions":-19565.77}],
+    outgoingContainerId: '#chart-holder-outgoing',
+    outgoingLegendContainerId: '#chart-legend-outgoing',
+    outgoingAlertId: '#outgoing-alert'
+  }).init);
+</script>
+        <hr><br>
+      
+    
+
+    
+  </div>
+
+  
+
+  
+
+  
+    
+
+    
+    
+    <br>
+    <div id="statement-10417" class="statement-container" data-account-id="10417">
+      
+      
+        
+
+<table class="table table-condensed table-striped statement-header" style="margin-bottom: 0; border-bottom: 1px solid gray">
+  <tbody><tr id="opening-balance-row">
+    <th>
+      
+        <span class="print-hidden">Счёт: Лицевой счёт</span>
+        <span class="printable hidden">Счёт: 40702&nbsp;810&nbsp;0&nbsp;4812&nbsp;3102279</span>
+    </th>
+    
+      <th class="right" style="vertical-align: middle;">Входящий остаток на 01.09.2025</th>
+      <th width="10%" class="right amount" style="vertical-align: middle;">100.00</th>
+      
+    
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+<table class="table table-condensed table-striped statement sortable ">
+  <thead>
+  <tr>
+    
+      <th class="{sorter: false}">
+        <div class="print-hidden">
+          <input type="checkbox" class="toggle-all-transactions print-hidden" data-account="10417">
+        </div>
+        
+      </th>
+    
+    
+      <th class="{sorter: 'date'} header" style="min-width: 35px;" data-column="time">Дата</th>
+      
+        <th style="min-width: 52px;" data-column="docNumber" class="header">№&nbsp;док.</th>
+      
+      
+      
+      <th width="28%" data-column="partyName" class="header">Контрагент</th>
+      <th width="25%" data-column="partyBank" class="header">Банк</th>
+      <th class="{sorter: 'text'} header" width="28%" data-column="description">Операция</th>
+      <th width="10%" class="right amount {sorter: 'amount'} header" data-column="amount">Сумма (RUB)</th>
+      
+    
+    
+  </tr>
+</thead>
+  <tbody>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9E%D0%9E%D0%9E+%22%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C+1703%22" data-txid="10703" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10703" data-archival-code="z10000013" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    17.09.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10013
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10703&amp;accountId=10417&amp;archivalCode=z10000013')">
+      <span class="counterparty-name">ООО "Петропавловская крепость 1703"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7713507928</span>
+            <br><span class="account">40702810500390000902</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО "БАНК МОСКВЫ"<br><span class="bic">044525219</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-132.90</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%97%D0%90%D0%9E+%22%D0%A1%D0%BF%D0%B0%D1%81+%D0%BD%D0%B0+%D0%BA%D1%80%D0%BE%D0%B2%D0%B8+1907%22" data-txid="10702" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10702" data-archival-code="z10000012" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    27.09.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10012
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10702&amp;accountId=10417&amp;archivalCode=z10000012')">
+      <span class="counterparty-name">ЗАО "Спас на крови 1907"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7810157443</span>
+            <br><span class="account">40702810410000006905</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ФИЛИАЛ ОПЕРУ ОАО БАНК ВТБ В САНКТ-​ПЕТЕРБУРГЕ<br><span class="bic">044030704</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-43.25</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9E%D0%9E%D0%9E+%22%D0%9C%D0%B5%D0%BD%D1%88%D0%B8%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86+1711%22" data-txid="10704" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10704" data-archival-code="z10000014" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    02.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10014
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10704&amp;accountId=10417&amp;archivalCode=z10000014')">
+      <span class="counterparty-name">ООО "Меншиковский дворец 1711"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7717101492</span>
+            <br><span class="account">40702810800000003902</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО АКБ "МЕТАЛЛИНВЕСТБАНК"<br><span class="bic">044525176</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-593.35</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9E%D0%9E%D0%9E+%22%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C+1703%22" data-txid="10691" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10691" data-archival-code="z10000001" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    07.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10001
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10691&amp;accountId=10417&amp;archivalCode=z10000001')">
+      <span class="counterparty-name">ООО "Петропавловская крепость 1703"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7713507928</span>
+            <br><span class="account">40702810500390000902</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО "БАНК МОСКВЫ"<br><span class="bic">044525219</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-19&nbsp;432.87</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-credit" data-mcc="" data-terminal="%D0%9E%D0%90%D0%9E+%22%D0%AD%D1%80%D0%BC%D0%B8%D1%82%D0%B0%D0%B6+1754%22" data-txid="10705" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10705" data-archival-code="z10000015" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    11.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10015
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10705&amp;accountId=10417&amp;archivalCode=z10000015')">
+      <span class="counterparty-name">ОАО "Эрмитаж 1754"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">3435800872</span>
+            <br><span class="account">40702810000010000204</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО КБ "РУСЮГБАНК"<br><span class="bic">041806791</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Возврат оплаты за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="positive">945.27</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%98%D0%9F+%22%D0%9F%D0%B5%D1%82%D1%80+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87+1672%22" data-txid="10701" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10701" data-archival-code="z10000011" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    12.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10011
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10701&amp;accountId=10417&amp;archivalCode=z10000011')">
+      <span class="counterparty-name">ИП "Петр Алексеевич 1672"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">616700118724</span>
+            <br><span class="account">40802810100110000183</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ФИЛИАЛ ОАО "БИНБАНК" В РОСТОВЕ-​НА-​ДОНУ<br><span class="bic">046015215</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-2&nbsp;199.01</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9E%D0%9E%D0%9E+%22%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D1%81%D0%BE%D0%B1%D0%BE%D1%80+1811%22" data-txid="10692" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10692" data-archival-code="z10000002" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    17.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10002
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10692&amp;accountId=10417&amp;archivalCode=z10000002')">
+      <span class="counterparty-name">ООО "Казанский собор 1811"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">3663048732</span>
+            <br><span class="account">40702810413000112030</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td><br><span class="bic">042007681</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-8&nbsp;409.43</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%97%D0%90%D0%9E+%22%D0%9A%D1%83%D0%BD%D1%81%D1%82%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%B0+1727%22" data-txid="10693" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10693" data-archival-code="z10000003" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    20.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10003
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10693&amp;accountId=10417&amp;archivalCode=z10000003')">
+      <span class="counterparty-name">ЗАО "Кунсткамера 1727"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">3662104737</span>
+            <br><span class="account">40702810311000100768</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ВОЛГОГРАДСКОЕ ОСБ N 8621<br><span class="bic">041806647</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-23&nbsp;508.22</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%A3%D0%A4%D0%9A+%D0%BF%D0%BE+%D0%B3.+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%83+%28%D0%9C%D0%B5%D0%B6%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F+%D0%98%D0%A4%D0%9D%D0%A1+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8+%E2%84%9623+%D0%BF%D0%BE+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%83%29" data-txid="10696" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10696" data-archival-code="z10000006" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    20.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10006
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10696&amp;accountId=10417&amp;paymentType=TAX&amp;archivalCode=z10000006')">
+      <span class="counterparty-name">УФК по г. Санкт-​Петербургу (Межрайонная ИФНС России №23 по Санкт-​Петербургу)</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7810000001</span>
+            <br><span class="account">40101810200000010001</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ГРКЦ ГУ БАНКА РОССИИ ПО Г. САНКТ-​ПЕТЕРБУРГУ<br><span class="bic">044030001</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Налог на доходы рабочих и кораблестроителей, НДС не облагается</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-1&nbsp;955.30</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-credit" data-mcc="" data-terminal="%D0%9E%D0%90%D0%9E+%22%D0%AD%D1%80%D0%BC%D0%B8%D1%82%D0%B0%D0%B6+1754%22" data-txid="10699" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10699" data-archival-code="z10000009" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    21.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10009
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10699&amp;accountId=10417&amp;archivalCode=z10000009')">
+      <span class="counterparty-name">ОАО "Эрмитаж 1754"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">3435800872</span>
+            <br><span class="account">40702810000010000204</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО КБ "РУСЮГБАНК"<br><span class="bic">041806791</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Возврат оплаты за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="positive">4&nbsp;924.87</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%98%D0%9F+%22%D0%9F%D0%B5%D1%82%D1%80+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87+1672%22" data-txid="10694" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10694" data-archival-code="z10000004" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    22.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10004
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10694&amp;accountId=10417&amp;archivalCode=z10000004')">
+      <span class="counterparty-name">ИП "Петр Алексеевич 1672"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">616700118724</span>
+            <br><span class="account">40802810100110000183</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ФИЛИАЛ ОАО "БИНБАНК" В РОСТОВЕ-​НА-​ДОНУ<br><span class="bic">046015215</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-26&nbsp;400.11</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%A3%D0%A4%D0%9A+%D0%BF%D0%BE+%D0%B3.+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%83+%28%D0%9C%D0%B5%D0%B6%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F+%D0%98%D0%A4%D0%9D%D0%A1+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8+%E2%84%9623+%D0%BF%D0%BE+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%83%29" data-txid="10697" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10697" data-archival-code="z10000007" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    22.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10007
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10697&amp;accountId=10417&amp;paymentType=TAX&amp;archivalCode=z10000007')">
+      <span class="counterparty-name">УФК по г. Санкт-​Петербургу (Межрайонная ИФНС России №23 по Санкт-​Петербургу)</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7810000001</span>
+            <br><span class="account">40101810200000010001</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ГРКЦ ГУ БАНКА РОССИИ ПО Г. САНКТ-​ПЕТЕРБУРГУ<br><span class="bic">044030001</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Страховые взносы на обязательное медицинское страхование</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-205.99</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%97%D0%90%D0%9E+%22%D0%A1%D0%BF%D0%B0%D1%81+%D0%BD%D0%B0+%D0%BA%D1%80%D0%BE%D0%B2%D0%B8+1907%22" data-txid="10695" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10695" data-archival-code="z10000005" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    23.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10005
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10695&amp;accountId=10417&amp;archivalCode=z10000005')">
+      <span class="counterparty-name">ЗАО "Спас на крови 1907"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7810157443</span>
+            <br><span class="account">40702810410000006905</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ФИЛИАЛ ОПЕРУ ОАО БАНК ВТБ В САНКТ-​ПЕТЕРБУРГЕ<br><span class="bic">044030704</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-44&nbsp;813.71</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9F%D0%90%D0%9E+%22%D0%91%D0%90%D0%9D%D0%9A+%22%D0%A1%D0%90%D0%9D%D0%9A%D0%A2-%D0%9F%D0%95%D0%A2%D0%95%D0%A0%D0%91%D0%A3%D0%A0%D0%93%22" data-txid="10698" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10698" data-archival-code="z10000008" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    23.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10008
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10698&amp;accountId=10417&amp;paymentType=BANK_ORDER&amp;archivalCode=z10000008')">
+      <span class="counterparty-name">ПАО "БАНК "САНКТ-​ПЕТЕРБУРГ"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7810000001</span>
+            <br><span class="account">66951810351543500000</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ПАО "БАНК "САНКТ-​ПЕТЕРБУРГ"<br><span class="bic">044030790</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Комиссия по тарифу 12.04 за выполнение услуг по сопровождению полета, в том числе НДС (18%)</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-900.10</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9E%D0%9E%D0%9E+%22%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0+%D0%90%D1%80%D0%BA%D1%85%D1%8D%D0%BC%22" data-txid="10711" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10711" data-archival-code="z10000021" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    23.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      1080
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10711&amp;accountId=10417&amp;archivalCode=z10000021')">
+      <span class="counterparty-name">ООО "Библиотека города Аркхэм"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">500123579529</span>
+            <br><span class="account">40702810300000142840</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО АКБ "МЕТАЛЛИНВЕСТБАНК"<br><span class="bic">044525176</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Взнос на толкование некрономикона</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-18&nbsp;900.00</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%9E%D0%9E%D0%9E+%22%D0%9C%D0%B5%D0%BD%D1%88%D0%B8%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86+1711%22" data-txid="10700" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10700" data-archival-code="z10000010" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    24.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10010
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10700&amp;accountId=10417&amp;archivalCode=z10000010')">
+      <span class="counterparty-name">ООО "Меншиковский дворец 1711"</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7717101492</span>
+            <br><span class="account">40702810800000003902</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО АКБ "МЕТАЛЛИНВЕСТБАНК"<br><span class="bic">044525176</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за товар по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-98&nbsp;653.02</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2+%D0%98%D0%B2%D0%B0%D0%BD+%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" data-txid="10708" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10708" data-archival-code="z10000018" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    24.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10018
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10708&amp;accountId=10417&amp;archivalCode=z10000018')">
+      <span class="counterparty-name">Иванов Иван Иванович</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">500123579529</span>
+            <br><span class="account">40820810890550000011</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО АКБ "МЕТАЛЛИНВЕСТБАНК"<br><span class="bic">044525176</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за услуги по договору ГПХ *6200</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-3&nbsp;653.02</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2+%D0%98%D0%B2%D0%B0%D0%BD+%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" data-txid="10709" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10709" data-archival-code="z10000019" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    24.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10019
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10709&amp;accountId=10417&amp;archivalCode=z10000019')">
+      <span class="counterparty-name">Иванов Иван Иванович</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">7831000027</span>
+            <br><span class="account">47422810351543500000</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ПАО "БАНК "САНКТ-​ПЕТЕРБУРГ"<br><span class="bic">044030790</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Комиссия за услуги по договору</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-150.00</div>
+  </td>
+  
+</tr>
+    
+      <tr class="transaction-row tx-debit" data-mcc="" data-terminal="%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2+%D0%98%D0%B2%D0%B0%D0%BD+%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" data-txid="10707" data-transactionid="">
+  
+    <td>
+      <div class="print-hidden">
+        <input name="txId" value="10707" data-archival-code="z10000017" type="checkbox" class="shift-clickable">
+      </div>
+    </td>
+  
+  <td>
+    27.10.2025
+  </td>
+
+  
+    <td style="text-align: right;">
+      10017
+    </td>
+  
+
+  
+
+  <td>
+    <a href="javascript:void(0)" onclick="showAjaxDialog('/transactions/details?id=10707&amp;accountId=10417&amp;archivalCode=z10000017')">
+      <span class="counterparty-name">Иванов Иван Иванович</span>
+      
+        
+        
+          
+            <br>ИНН&nbsp;<span class="vatin">500123579529</span>
+            <br><span class="account">40817810351543500000</span>
+          
+          
+        
+      
+    </a>
+  </td>
+  
+    <td>ОАО АКБ "МЕТАЛЛИНВЕСТБАНК"<br><span class="bic">044525176</span></td>
+  
+  <td class="description-tx">
+    
+    
+    
+    
+    
+    
+    
+    
+      <span class="description">Оплата за услуги по договору ГПХ</span>
+      <br>
+    
+  </td>
+  <td class="right amount">
+    <div class="negative">-3&nbsp;653.02</div>
+  </td>
+  
+</tr>
+    
+    
+  </tbody>
+
+  <tbody>
+    
+      <tr id="closing-balance-row">
+        <th class="right" colspan="6">Исходящий остаток на 27.10.2025</th>
+        <th class="right amount">-3&nbsp;553.02</th>
+        
+      </tr>
+    
+    <tr id="credit-turnover-row">
+      <th class="right" colspan="6">Поступление</th>
+      <th class="right amount positive">5&nbsp;870.14</th>
+      
+    </tr>
+    <tr id="debit-turnover-row">
+      <th class="right" colspan="6">Списание</th>
+      <th class="right amount negative">-253&nbsp;603.30</th>
+      
+    </tr>
+    
+      <tr id="reserved" onclick="toggleHolds('10417', 3)" style="cursor:pointer">
+        <th class="right" colspan="6"><i class="icon icon-arrow-down"></i> Зарезервировано</th>
+        <th class="right amount negative">-42&nbsp;000.00</th>
+        
+      </tr>
+      <tr id="hold-loading" class="hidden">
+        <td colspan="7" class="right">Загрузка...</td>
+      </tr>
+      
+    
+  </tbody>
+
+</table>
+
+<script>
+  $(function() {
+    $('.reward-badge').tooltip();
+  });
+</script>
+      
+    </div>
+  
+</div>
+    
+  </div>
+
+  <div id="transaction-details-dialog" class="hidden modal fade" tabindex="-1"></div>
+
+
+
+        
+
+  <div class="bottom-cms-content">
+    
+    
+      <div class="cms-content"></div>
+    
+  </div>
+
+
+        
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+</div>
+
+<div id="footer">
+  
+    <div class="cms-content"></div>
+  
+  <div id="footer-info">
+    <div class="social-links pull-right">
+      <a class="icon-vkontakte-letter" href="https://vk.com/bspb" target="_blank"></a> <a class="icon-odnoklassniki" href="https://www.odnoklassniki.ru/bspb" target="_blank"></a> <a class="icon-telegram" href="https://t.me/mybspb" target="_blank"></a>
+    </div>
+
+    <div class="links pull-right">
+
+      
+        
+        
+        
+        
+        
+        
+        
+      
+
+      
+      
+      <div class="locales">
+        <button type="button" class="btn btn-text btn-toggle active" data-toggle="button" aria-pressed="false" autocomplete="off">
+          <div class="handle"></div>
+        </button>
+      </div>
+
+      
+        <a class="user-manual" target="_blank" rel="noopener noreferrer" href="https://www.bspb.ru/media/rukovodstvo_polzovatelja_i2_B_945386ba7f.pdf">Руководство пользователя</a>
+        
+          <a class="terms-of-use" target="_blank" rel="noopener noreferrer" href="https://www.bspb.ru/media/pravila_ib_i2b_e3ae85cd70.pdf">Правила i2B</a>
+        
+      
+      
+
+      <a class="website" href="https://www.bspb.ru/">Сайт банка</a>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright">© 1990 – 2025 ПАО «Банк «Санкт-Петербург»</div>
+    </div>
+    <div class="license">Генеральная лицензия Банка России на совершение банковских операций №436 от 31.12.2014</div>
+  </div>
+</div>
+
+
+
+<script>function Offers(n,t){function e(t){var e=$(t.target).closest(".offer"),o=i(e);$.post(t.target.href,{authenticityToken:n}),s.crmEvents.notifyDecline(o);var f=$(".offer:not(:visible):first");return e.animateTo($("#offers-button"),function(){e.remove(),$(".not-refused-offers .offer").length||$("#show-all-offers").hide(),r(f)}),!1}function r(n){n.length&&s.crmEvents.notifyShown(i(n))}function i(n){return n.attr("id").replace("offer-","")}function o(n){if(a(n))return!0;var e=$(this).find(".offer-action"),r=e.attr("href");if(!r)return!0;if(!t)return!0;var o=i($(this));return s.crmEvents.notifyClick(o).done(function(){r.indexOf("/return-call")>=0&&s.crmEvents.notifyDecline(o);var n=e.attr("target");n?window.open(r,n):s.openUrl(r)}),!1}function f(n){var e=$(n.target).closest("a"),r=e.attr("href");if(!r)return!0;if(!t)return!0;var i=c(e.closest("li"));return s.crmEvents.notifyClick(i).done(function(){r.indexOf("/return-call")>=0&&s.crmEvents.notifyDecline(i);var n=e.attr("target");n?window.open(r,n):window.location.hash=r}),!1}function c(n){return n.data("offer-ref")}function a(n){var t=$(n.target).closest("a");return t.is("a")&&t.closest(".offer-text").length>0}var s=this;s.crmEvents=new CrmEvents(n,t),s.openUrl=function(n){window.location.assign(n)},s.init=function(){$(".crm-offer:visible").each(function(n,t){var e=$(t).attr("id").replace("offer-","");s.crmEvents.notifyShown(e)}),$(".crm-offer .decline").on("click",e),$(".crm-offer").on("click",o)},s.mobileInit=function(){$("#credit-offer-banner li").each(function(n,t){if(!$(t).is(":hidden")){var e=c($(t));s.crmEvents.notifyShown(e),$(t).on("click",f)}})}}</script>
+
+<script>
+  $(function() {
+    validator.init();
+    validator.replaceNativeValidation();
+    new DoubleClickPreventer().init(document);
+    new DisableFormBeforeConfirmation().init();
+    new ConfirmDialog('be3baf0e854db0505c97257e4eafb490493d0dc2').init();
+    new AjaxModal().init();
+    new IframeSessionExpirationHandler().init();
+    new FormNormalizer().init(document.body);
+    new ChatInitializer({
+      baseUrl: 'https:\/\/idemo.bspb.ru',
+      frameUrl: '\/chat\/start?ref=8145938a5dc2cc532a24ff9499fa0fe003c83e6c22d3942583bcacdeaa6e3f7c&dboId=6'
+    }).init(document);
+
+    new ExternalLinksOpener({
+      textLeavingSiteWarning: 'Вы покидаете сайт интернет-банка БСПб и будете перенаправлены на сайт партнера',
+      textForward: 'Перейти',
+      textCancel: 'Вернуться'
+    }).init();
+  });
+
+  
+    var offers = new Offers('be3baf0e854db0505c97257e4eafb490493d0dc2', true);
+    $(function() {offers.init()});
+  
+</script>
+
+<div id="default-dialog" class="modal fade hidden" tabindex="-1"></div>
+
+
+
+  <script>function FeedbackPopup(e,n){function c(e){e.find(".active").show(),e.find(".passive").hide()}function t(e){e.find(".active").hide(),e.find(".passive").show()}function o(){var e=$(this),n=e.siblings();c(e),t(n),e.addClass("selected"),n.removeClass("selected"),$("#feedback-comment-block").slideDown(),$('[name="feedback.answer"]').val(e.data("answer"))}function i(){var e=$(this),n=e.siblings().filter(":not(.selected)");c(e),t(n)}function a(){var e=$(this);0===$(".emoticon-btn.selected").length?c($(".emoticon-btn")):e.hasClass("selected")||t(e)}function s(){d(function(){$("#feedback-popup").clone().appendTo("#feedback-popup").animateTo($(".help-menu")),$("#feedback-popup").hide()})}function f(){d(function(){$("#feedback-popup").hide()})}function d(e){$.post("/feedback/close",{authenticityToken:n},e)}function u(){$("#feedback-popup-success").show(),setTimeout(function(){$("#feedback-popup-success").fadeOut(1e3)},4e3)}function p(){$("#feedback-submit").prop("disabled",!0),f(),u()}function b(e){e.preventDefault();var c=$('[name="feedback.answer"]',"#feedback-form").val(),t=$('[name="feedback.comment"]',"#feedback-form").val();$.post("/feedback/submit",{authenticityToken:n,"feedback.answer":c,"feedback.comment":t},p)}this.init=function(){e&&$.get("/feedback/timeout",function(e){setTimeout(function(){$("#feedback-popup").show()},e.timeout)}),$(".emoticon-btn").hover(i,a),$(".emoticon-btn").on("click",o),$(".close-feedback-popup").on("click",s),$("#feedback-submit").on("click",b)}}</script>
+  <div id="feedback-popup-success" class="feedback-container print-hidden hidden">
+  <div>
+    <span>
+      <img src="/public/images/feedback-popup/success.svg" alt="success">
+    </span>
+    <span class="feedback-popup-success-message">Спасибо за ваш отзыв!</span>
+  </div>
+</div>
+
+  <script>
+    $(function() {
+      var feedbackAllowed = false;
+      new FeedbackPopup(feedbackAllowed, 'be3baf0e854db0505c97257e4eafb490493d0dc2').init();
+    });
+  </script>
+
+  <div id="feedback-popup" class="feedback-container print-hidden hidden">
+    <div>
+      <div class="title">Оцените Интернет-банк</div>
+      <span class="close-feedback-popup feedback-close-icon">
+        <img src="/public/images/feedback-popup/close.svg" alt="close">
+      </span>
+    </div>
+    <div id="emoticons">
+      <div class="emoticon-btn" data-answer="GOOD">
+        <img class="emoticon active" src="/public/images/feedback-popup/smile-face-good-color.svg" alt="good">
+        <img class="emoticon passive hidden" src="/public/images/feedback-popup/smile-face-good-bw.svg" alt="good">
+        <div class="emoticon-label">Нравится</div>
+      </div>
+      <div class="emoticon-btn" data-answer="NORMAL">
+        <img class="emoticon active" src="/public/images/feedback-popup/smile-face-normal-color.svg" alt="normal">
+        <img class="emoticon passive hidden" src="/public/images/feedback-popup/smile-face-normal-bw.svg" alt="normal">
+        <div class="emoticon-label">Хорошо</div>
+      </div>
+      <div class="emoticon-btn" data-answer="BAD">
+        <img class="emoticon active" src="/public/images/feedback-popup/smile-face-bad-color.svg" alt="bad">
+        <img class="emoticon passive hidden" src="/public/images/feedback-popup/smile-face-bad-bw.svg" alt="bad">
+        <div class="emoticon-label">Не нравится</div>
+      </div>
+    </div>
+    <div id="feedback-comment-block">
+      <div id="feedback-comment-title">
+        <span class="title">Комментарий&nbsp;</span>
+        <span class="subtitle">(Дополнительно)</span>
+      </div>
+      <div id="feedback-form">
+        <input type="hidden" name="feedback.answer">
+        <textarea name="feedback.comment" id="feedback-comment" maxlength="4000" rows="3" placeholder=""></textarea>
+        <hr>
+        <div id="feedback-action-buttons">
+          <a class="close-feedback-popup btn btn-small btn-secondary">Ответить позже</a>
+          <button id="feedback-submit" class="btn btn-small btn-primary">Отправить ответ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <script src="/public/javascripts/bizone/bzfp.js"></script>
+  <script src="/public/javascripts/bizone/BiZoneProxy.js?bccf1cad34b"></script>
+
+  <script>
+    window.biZoneProxy = new BiZoneProxy();
+  </script>
+
+
+
+  <script src="/public/javascripts/bizone/BiZone.js?bccf1cad34b"></script>
+
+  <script>
+    initPage(new BiZone().init);
+  </script>
+
+
+<div class="datepicker datepicker-dropdown dropdown-menu" style="top: 0px; left: 0px;"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">Сентябрь 2025</th><th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th></tr><tr><th class="dow">Пн</th><th class="dow">Вт</th><th class="dow">Ср</th><th class="dow">Чт</th><th class="dow">Пт</th><th class="dow">Сб</th><th class="dow">Вс</th></tr></thead><tbody><tr><td class="day old">25</td><td class="day old">26</td><td class="day old">27</td><td class="day old">28</td><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td></tr><tr><td class="day active">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td></tr><tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td></tr><tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td></tr><tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td></tr><tr><td class="day">29</td><td class="day">30</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Сегодня</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">2025</th><th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Янв</span><span class="month">Фев</span><span class="month">Мар</span><span class="month">Апр</span><span class="month">Май</span><span class="month">Июн</span><span class="month">Июл</span><span class="month">Авг</span><span class="month active">Сен</span><span class="month">Окт</span><span class="month disabled">Ноя</span><span class="month disabled">Дек</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Сегодня</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">2020-2029</th><th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2019</span><span class="year">2020</span><span class="year">2021</span><span class="year">2022</span><span class="year">2023</span><span class="year">2024</span><span class="year active">2025</span><span class="year disabled">2026</span><span class="year disabled">2027</span><span class="year disabled">2028</span><span class="year disabled">2029</span><span class="year old disabled">2030</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Сегодня</th></tr></tfoot></table></div></div><div class="datepicker datepicker-dropdown dropdown-menu" style="top: 0px; left: 0px;"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">Октябрь 2025</th><th class="next" style="visibility: hidden;"><i class="icon-arrow-right"></i></th></tr><tr><th class="dow">Пн</th><th class="dow">Вт</th><th class="dow">Ср</th><th class="dow">Чт</th><th class="dow">Пт</th><th class="dow">Сб</th><th class="dow">Вс</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td></tr><tr><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td></tr><tr><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td></tr><tr><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td></tr><tr><td class="day active">27</td><td class="day disabled">28</td><td class="day disabled">29</td><td class="day disabled">30</td><td class="day disabled">31</td><td class="day new disabled">1</td><td class="day new disabled">2</td></tr><tr><td class="day new disabled">3</td><td class="day new disabled">4</td><td class="day new disabled">5</td><td class="day new disabled">6</td><td class="day new disabled">7</td><td class="day new disabled">8</td><td class="day new disabled">9</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Сегодня</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">2025</th><th class="next" style="visibility: hidden;"><i class="icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Янв</span><span class="month">Фев</span><span class="month">Мар</span><span class="month">Апр</span><span class="month">Май</span><span class="month">Июн</span><span class="month">Июл</span><span class="month">Авг</span><span class="month">Сен</span><span class="month active">Окт</span><span class="month disabled">Ноя</span><span class="month disabled">Дек</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Сегодня</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">2020-2029</th><th class="next" style="visibility: hidden;"><i class="icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2019</span><span class="year">2020</span><span class="year">2021</span><span class="year">2022</span><span class="year">2023</span><span class="year">2024</span><span class="year active">2025</span><span class="year disabled">2026</span><span class="year disabled">2027</span><span class="year disabled">2028</span><span class="year disabled">2029</span><span class="year old disabled">2030</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Сегодня</th></tr></tfoot></table></div></div><div class="graph-tooltip"></div></body></html>
