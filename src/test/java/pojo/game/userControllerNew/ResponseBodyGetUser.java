@@ -3,21 +3,21 @@ package pojo.game.userControllerNew;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-@Getter @Setter
+@Getter
+@Setter
 public class ResponseBodyGetUser {
     private int id;
     private String login;
     private String pass;
-    private ArrayList<Object> games;
+    private List<Object> games;
 
-    public ResponseBodyGetUser(){};
+    public ResponseBodyGetUser() {
+    }
 
 
-    public ResponseBodyGetUser(int id, ArrayList<Object> games, String pass, String login) {
+    public ResponseBodyGetUser(int id, List<Object> games, String pass, String login) {
         this.id = id;
         this.games = games;
         this.pass = pass;

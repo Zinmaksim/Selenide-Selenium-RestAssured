@@ -13,8 +13,8 @@ public class Users {
     }
 
 
-
-    public Users() {};
+    public Users() {
+    }
 
     @Override
     public String toString() {

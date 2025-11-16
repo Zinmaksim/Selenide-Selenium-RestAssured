@@ -25,12 +25,12 @@ public class LoginPage {
         }
     }
 
-public void auth(){
-    open("https://idemo.bspb.ru/statement");
-    password.shouldBe(visible, Duration.ofSeconds(20)).pressEnter();
-    enter2ndFactor();
+    public void auth() {
+        open("https://idemo.bspb.ru/statement");
+        password.shouldBe(visible, Duration.ofSeconds(20)).pressEnter();
+        enter2ndFactor();
 
-}
+    }
 
 
 }

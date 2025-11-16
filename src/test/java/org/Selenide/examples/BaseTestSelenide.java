@@ -13,7 +13,6 @@ import org.junit.jupiter.api.BeforeAll;
 import java.io.File;
 import java.io.IOException;
 
-import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 
 public class BaseTestSelenide {

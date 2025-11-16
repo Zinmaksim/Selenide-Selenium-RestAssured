@@ -3,7 +3,8 @@ package reqres;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter @Setter
+@Getter
+@Setter
 public class UserDataOld {
     // нужно именно Integer, а не int. Разобраться почему
     private Integer id;

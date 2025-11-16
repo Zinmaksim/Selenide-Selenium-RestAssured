@@ -1,32 +1,31 @@
 package reqres;
 
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import reqres.pojo.userData.Data;
 import reqres.pojo.userData.UserData;
+
 import java.util.ArrayList;
 import java.util.List;
-import static io.restassured.RestAssured.given;
+
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static io.restassured.module.jsv.JsonSchemaValidatorSettings.settings;
 
 
 // https://reqres.in/api-docs/#/default - swagger
-public class ReqresTest extends ReqSpecification{
+public class ReqresTest extends ReqSpecification {
     private final static String URL = "https://reqres.in/api/";
 
     @Test
     @Disabled
     public void getListUsers() {
         UserData userData = requestSpec()
-                        .get(URL + "users?page=2&per_page=2")
-                        .then()
-                        .statusCode(200)
-                        .log().all()
-                        .extract().body().as(UserData.class);
+                .get(URL + "users?page=2&per_page=2")
+                .then()
+                .statusCode(200)
+                .log().all()
+                .extract().body().as(UserData.class);
 
         System.out.println(userData.toString());
         System.out.println(userData.getPage());
@@ -69,7 +68,8 @@ public class ReqresTest extends ReqSpecification{
 
     }
 
-    @Test @Disabled
+    @Test
+    @Disabled
     public void postUser() {
         String body = "{\n" +
                 "  \"username\": \"Zinevskiy\",\n" +
@@ -86,13 +86,13 @@ public class ReqresTest extends ReqSpecification{
                 .andReturn();
 
         String id = responsePostUser.body().jsonPath().get("id");
-     //  Response responseGetUserId = requestSpec()
-     //          .get(URL + "users/" + id)
-     //          .then()
-     //          .statusCode(200)
-     //          .log().all()
-     //          .extract().response()
-     //          .andReturn();
+        //  Response responseGetUserId = requestSpec()
+        //          .get(URL + "users/" + id)
+        //          .then()
+        //          .statusCode(200)
+        //          .log().all()
+        //          .extract().response()
+        //          .andReturn();
 
         //Response responseGetUser = given()
         //        .header(new Header("x-api-key", "reqres-free-v1"))
@@ -149,8 +149,8 @@ public class ReqresTest extends ReqSpecification{
                 .statusCode(200)
                 .log().all()
                 .assertThat().body(matchesJsonSchemaInClasspath
-                         ("schemas/reqres/getUser.schema.json")
-                         .using(settings().with().checkedValidation(false)))
+                        ("schemas/reqres/getUser.schema.json")
+                        .using(settings().with().checkedValidation(false)))
                 .extract().response()
                 .andReturn();
 

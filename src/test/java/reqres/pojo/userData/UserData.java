@@ -17,8 +17,6 @@ public class UserData {
     private Meta _meta;
 
 
-
-
     public UserData() {
     }
 

@@ -2,6 +2,7 @@ package reqres.pojo.userData;
 
 import lombok.Getter;
 import lombok.Setter;
+
 import java.util.List;
 
 @Getter
