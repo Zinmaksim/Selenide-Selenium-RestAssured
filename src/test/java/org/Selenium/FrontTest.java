@@ -27,39 +27,6 @@ public class FrontTest extends BaseSeleniumTest {
        firstPage.openAlert().openFirstAlert();
    }
 
- //   @Test
- //   public void openBusinessCard() throws InterruptedException {
- //       LoginPage loginPage = new LoginPage();
-//
- //       String title = loginPage.auth("a61", "Hello123").openSmsCode().openMainPage().openBusinessCardsList().clickCard().openBusinessCard().getTitle();
- //       //Assert.assertEquals(String.format("Element not expected. It is '%s'", title), "МИР СУПРИМ БИЗНЕС ПРО", title);
- //       Assert.assertEquals(title, "МИР СУПРИМ БИЗНЕС ПРО2");
- //   }
-//
-//
- //   @Test
- //   public void showRequisites() throws InterruptedException {
- //       LoginPage loginPage = new LoginPage();
- //       String cvv = loginPage.auth("a61", "Hello123").openSmsCode().openMainPage().openBusinessCardsList().clickCard().openBusinessCard().clickRequisites().showCvv().inputCodeReq().chowOpenCvv();
- //       //Assert.assertEquals(String.format("Element not expected. It is '%s'", cvv), "703", cvv);
- //       Assert.assertEquals(cvv, "702");
- //   }
-//
- //   @Test
- //   public void showExtract() throws InterruptedException {
- //       LoginPage loginPage = new LoginPage();
- //       String url = loginPage.auth("a61", "Hello123").openSmsCode().openMainPage().openBusinessCardsList().clickCard().openBusinessCard().clickExtract().orderExtract().print();
- //       System.out.println("*** ");
- //       Assert.assertTrue(url.contains("blob:https://pro.test.apps.tpaas.trosbank.trus.tsocgen/"));
-//
- //   }
-//
- //   @Test
- //   public void downloadExtract() throws InterruptedException {
- //       LoginPage loginPage = new LoginPage();
- //       loginPage.auth("a61", "Hello123").openSmsCode().openMainPage().openBusinessCardsList().clickCard().openBusinessCard().clickExtract().orderExtract().deleteExtract().download();
- //       System.out.println("*** ");
- //   }
 
 
 }
