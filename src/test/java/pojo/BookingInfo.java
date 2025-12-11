@@ -3,8 +3,7 @@ package pojo;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+@Getter @Setter
 public class BookingInfo {
 //"bookingid": 36,
 //        "booking": {
@@ -20,10 +19,11 @@ public class BookingInfo {
 //    }
 
     private int bookingid;
-    private Booking booking;
 
     public BookingInfo() {
     }
+
+    private Booking booking;
 
     @Override
     public String toString() {

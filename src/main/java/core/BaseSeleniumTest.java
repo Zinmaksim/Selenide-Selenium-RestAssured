@@ -2,9 +2,9 @@ package core;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.jupiter.api.AfterAll;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.time.Duration;
 
 // делаем класс абстрактным, чтобы не могли создавать экземпляры, потому что  мф будем только наследоваться
