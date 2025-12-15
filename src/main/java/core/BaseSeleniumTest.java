@@ -1,7 +1,9 @@
 package core;
 
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +17,10 @@ abstract public class BaseSeleniumTest {
 
     @BeforeEach
     public void setUp() {
+        // Включаем логгирование Selenide → Allure
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
+                .screenshots(true)   // ✅ скриншоты при ошибках
+                .savePageSource(true)); // опционально: HTML-исходник
         //setting path of chromedriver.exe
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\maksi\\OneDrive\\Рабочий стол\\AutoLearning\\driver\\chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\maksi\\IdeaProjects\\selenide\\chromedriver.exe");

@@ -3,21 +3,14 @@ default:
   tags:
     - shellocal
 stages:
-  - build
   - test
-  - deploy
 
-build_job:
-  stage: build
-  script:
-    - echo "Сборка проекта"
-
-test_job:
+Integration tests with Allure:
   stage: test
   script:
-    - echo "Запуск тестов"
+    - mvn clean test
+    - mvn allure:report
 
-deploy_job:
-  stage: deploy
-  script:
-    - echo "Развертывание на сервере"
+  artifacts:
+    paths:
+      - build\reports\allureReports\*
