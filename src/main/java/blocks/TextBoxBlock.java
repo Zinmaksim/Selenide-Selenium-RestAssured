@@ -23,7 +23,7 @@ public class TextBoxBlock extends BaseSeleniumPage {
     private WebElement buttonSubmit;
 
     public TextBoxBlock() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public TextBoxBlock submitTextBox(String fullNameValue, String emailValue, String currentAddressValue, String permanentAddressValue) throws InterruptedException {

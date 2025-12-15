@@ -2,7 +2,8 @@ package org.Selenium;
 
 import core.BaseSeleniumTest;
 import org.assertj.core.api.SoftAssertions;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.WebDriver;
@@ -17,14 +18,14 @@ public class FrontTest extends BaseSeleniumTest {
     @ParameterizedTest
     @ValueSource(strings = {"egorov@mail.ru", "egorov@mail", "egorov@"})
     public void openTextBox(String email) throws InterruptedException, AWTException {
-        FirstPage firstPage = new FirstPage();
+        FirstPage firstPage = new FirstPage().open();
         firstPage.openElements().openTextBox().submitTextBox("Egorov", email, "London", "Paris");
 
                  }
 
    @Test
    public void openAlert() throws InterruptedException, AWTException {
-       FirstPage firstPage = new FirstPage();
+       FirstPage firstPage = new FirstPage().open();
        firstPage.openAlert().openFirstAlert();
        // hard assert
        assertThat(driver.getCurrentUrl()).isEqualTo("http://85.192.34.140:8081/alerts");

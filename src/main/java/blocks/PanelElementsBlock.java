@@ -16,7 +16,7 @@ public class PanelElementsBlock extends BaseSeleniumPage {
     private WebElement iconTextBox;
 
     public PanelElementsBlock() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public TextBoxBlock openTextBox() throws AWTException, InterruptedException {

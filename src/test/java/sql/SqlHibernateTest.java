@@ -28,23 +28,35 @@ public class SqlHibernateTest extends JDBCPostgreSQLHibernateBase {
         @Test
         public void getSelectHibernate () throws SQLException {
             Session session = sessionFactory.openSession();
-            Transaction transaction = session.beginTransaction();
-            //  Statement statement = connection.createStatement();
-            //  ResultSet resultSet = statement.executeQuery("SELECT * FROM Staff2"); // замените на ваше имя таблицы
-            Query resultSet = session.createQuery("FROM Staff");//.getResultList();
+            Transaction tx = null;
 
-            // Обработка результата
-            //   while (resultSet.next()) {
-            //       String id = resultSet.getString("id");
-            //       String name = resultSet.getString("name");
-            //       String position = resultSet.getString("position");
-            //       String birthday = resultSet.getString("birthday");
-            //       String has_children = resultSet.getString("has_children");
-            //       System.out.println(id + ", " + name + ", " + position + ", " + birthday + ", " + has_children);
-            //   }
+            try {
+                tx = session.beginTransaction();
 
-            transaction.commit();
-            session.close();
+                // 1. Простой SELECT — возвращает List<Object[]>
+                String sql = "SELECT id, name, position FROM Staff WHERE id > :minId";
+                List<Object[]> results = session
+                        .createNativeQuery(sql)
+                        .setParameter("minId", 0L)
+                        .getResultList();
+
+                for (Object[] row : results) {
+                    Long id = ((Number) row[0]).longValue();
+                    String name = (String) row[1];
+                    String position = (String) row[2];
+                    System.out.printf("ID: %d, Name: %s, Position: %s%n", id, name, position);
+                }
+
+                tx.commit();
+
+            } catch (Exception e) {
+                if (tx != null) tx.rollback();
+                e.printStackTrace();
+            } finally {
+                session.close();
+            }
+           // transaction.commit();
+           // session.close();
             // resultSet.close();
             // statement.close();
         }

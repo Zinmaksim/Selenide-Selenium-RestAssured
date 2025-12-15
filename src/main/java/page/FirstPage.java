@@ -6,7 +6,6 @@ import core.BaseSeleniumPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import java.awt.*;
 
 public class FirstPage extends BaseSeleniumPage {
@@ -18,9 +17,14 @@ public class FirstPage extends BaseSeleniumPage {
     private WebElement iconAlerts;
 
     public FirstPage() {
-        driver.get("http://85.192.34.140:8081/");
+        //driver.get("http://85.192.34.140:8081/");
         // отвечает за инициализацию всех элементов
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
+    }
+
+    public FirstPage open() {
+        BaseSeleniumPage.getDriver().get("http://85.192.34.140:8081/");
+        return this;
     }
 
     public PanelElementsBlock openElements() throws AWTException, InterruptedException {

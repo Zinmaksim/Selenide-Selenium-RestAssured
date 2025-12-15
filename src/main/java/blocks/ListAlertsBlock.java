@@ -13,12 +13,12 @@ public class ListAlertsBlock extends BaseSeleniumPage {
 
 
     public ListAlertsBlock() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public void openFirstAlert() throws InterruptedException {
         firstAlert.click();
-        Alert alerts = driver.switchTo().alert();
+        Alert alerts = getDriver().switchTo().alert();
         if (alerts.getText().contains("You clicked a button"))
             System.out.println("Good alert");
         else System.out.println("different alert");

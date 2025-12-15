@@ -1,8 +1,9 @@
 package core;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.jupiter.api.AfterAll;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
@@ -12,11 +13,13 @@ abstract public class BaseSeleniumTest {
     protected WebDriver driver;
 
 
-    @Before
+    @BeforeEach
     public void setUp() {
         //setting path of chromedriver.exe
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\maksi\\OneDrive\\Рабочий стол\\AutoLearning\\driver\\chromedriver.exe");
-        //WebDriverManager.chromedriver().setup();
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\maksi\\OneDrive\\Рабочий стол\\AutoLearning\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\maksi\\IdeaProjects\\selenide\\chromedriver.exe");
+
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         //driver.manage().window().setSize(new Dimension(1920, 1080));
         // здесь может понадобится выставить в настройках экрана ноутбука разрешение 100% чтобы правильно отобразился экран
@@ -29,12 +32,14 @@ abstract public class BaseSeleniumTest {
         BaseSeleniumPage.setDriver(driver);
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         // закрываем Хром драйвер (обязательно)
         //driver.close();
         // закрываем браузер
-        //driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
 
