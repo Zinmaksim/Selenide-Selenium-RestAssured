@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
-// делаем класс абстрактным, чтобы не могли создавать экземпляры, потому что  мф будем только наследоваться
+// делаем класс абстрактным, чтобы не могли создавать экземпляры, потому что мы будем только наследоваться
 abstract public class BaseSeleniumTest {
     protected WebDriver driver;
 
